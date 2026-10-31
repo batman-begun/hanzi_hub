@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#f5f3ed" />
+    <meta
+      name="description"
+      content="Know the characters. Catch the numbers. Free Mandarin listening workouts for prices, times, numbers and phone numbers. No account, no ads."
+    />
+    <meta property="og:title" content="SHÙ 数字 — Mandarin Number Gym" />
+    <meta
+      property="og:description"
+      content="A little listening. A lot less freezing. Train real-life Mandarin numbers in ten-question workouts."
+    />
+    <title>SHÙ 数字 — Mandarin Number Gym</title>
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./" aria-label="SHÙ home"
+        >SHÙ<span lang="zh">数字</span><i></i></a
+      ><span class="header-note">MANDARIN NUMBER GYM</span
+      ><button id="guide-open" class="text-button">
+        Field notes <span>↗</span>
+      </button>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="eyebrow">
+          <span class="live-dot"></span> SMALL REPS. REAL-WORLD CONFIDENCE.
+        </div>
+        <h1>Know the words.<br /><span>Catch the numbers.</span></h1>
+        <p>
+          Prices at the market. A train at 14:05. That phone number.<br
+            class="desktop"
+          />
+          Train the Mandarin you don’t have time to translate.
+        </p>
+      </section>
+      <div class="workspace">
+        <aside class="settings">
+          <div class="section-label">01 / CHOOSE YOUR WORKOUT</div>
+          <div class="modes" role="group" aria-label="Workout type">
+            <button data-mode="numbers" class="mode active" aria-pressed="true">
+              <span class="mode-icon">数</span
+              ><span
+                ><strong>Numbers</strong
+                ><small>From zero to ten thousand+</small></span
+              ><span class="arrow">↗</span></button
+            ><button data-mode="prices" class="mode" aria-pressed="false">
+              <span class="mode-icon">¥</span
+              ><span
+                ><strong>Prices</strong
+                ><small>Make sense of the bill</small></span
+              ><span class="arrow">↗</span></button
+            ><button data-mode="times" class="mode" aria-pressed="false">
+              <span class="mode-icon">◷</span
+              ><span
+                ><strong>Times</strong
+                ><small>Never miss your train</small></span
+              ><span class="arrow">↗</span></button
+            ><button data-mode="phones" class="mode" aria-pressed="false">
+              <span class="mode-icon">#</span
+              ><span
+                ><strong>Phone numbers</strong
+                ><small>Catch every single digit</small></span
+              ><span class="arrow">↗</span>
+            </button>
+          </div>
+          <div class="section-label difficulty-label">02 / SET YOUR PACE</div>
+          <div class="levels" role="group" aria-label="Difficulty">
+            <button data-level="0" class="selected" aria-pressed="true">
+              Warm-up</button
+            ><button data-level="1" aria-pressed="false">Everyday</button
+            ><button data-level="2" aria-pressed="false">Challenge</button>
+          </div>
+          <p class="level-note" id="level-note">
+            0–99 · Get your ears warmed up.
+          </p>
+          <div class="daily">
+            <span class="mini-icon">↗</span>
+            <div>
+              <strong id="total">Your first rep starts here.</strong
+              ><small id="personal">Progress stays on this device.</small>
+            </div>
+          </div>
+        </aside>
+        <section class="gym" aria-label="Listening practice">
+          <div class="gym-top">
+            <span id="session-label">THE LISTENING ROOM</span
+            ><span id="counter">10 questions · no rush</span>
+          </div>
+          <div class="progress-track"><div id="progress"></div></div>
+          <audio id="clip" preload="none"></audio>
+          <div id="practice">
+            <div class="audio-area">
+              <span class="pill" id="category">NUMBERS / WARM-UP</span
+              ><button id="play" class="play" aria-label="Play Mandarin audio">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="30"
+                  height="30"
+                  aria-hidden="true"
+                >
+                  <path d="M9 5v14l11-7z" fill="currentColor" />
+                </svg>
+              </button>
+              <h2 id="prompt">A little listening.<br />A lot less freezing.</h2>
+              <p id="audio-status" role="status">
+                Tap play to begin your 10-question workout.
+              </p>
+              <div class="audio-options">
+                <button id="slow">◷ Slow replay</button
+                ><span>Mandarin · synthetic voice</span>
+              </div>
+            </div>
+            <form id="answer-form">
+              <label for="answer">WHAT DID YOU HEAR?</label>
+              <div class="answer-row">
+                <input
+                  id="answer"
+                  autocomplete="off"
+                  inputmode="numeric"
+                  placeholder="Type the number"
+                  aria-describedby="input-hint"
+                  disabled
+                /><button id="check" type="submit" disabled>
+                  Check <span>↵</span>
+                </button>
+              </div>
+              <small id="input-hint"
+                >Use digits, e.g. 28. Press Enter to check.</small
+              >
+            </form>
+            <div id="feedback" class="feedback" role="status" hidden></div>
+            <div id="next-row" hidden>
+              <button id="next" class="primary">
+                Next question <span>→</span>
+              </button>
+            </div>
+          </div>
+          <div id="results" hidden></div>
+          <div class="gym-bottom">
+            <span
+              ><span class="live-dot"></span> ZERO SIGN-UPS. JUST
+              PRACTICE.</span
+            ><button id="restart" class="text-button">Start fresh ↺</button>
+          </div>
+        </section>
+      </div>
+      <section class="principles">
+        <div>
+          <span>01</span><strong>Listen first.</strong>
+          <p>No characters to lean on. Just your ears.</p>
+        </div>
+        <div>
+          <span>02</span><strong>Catch the pattern.</strong>
+          <p>Reveal the characters and reading after each rep.</p>
+        </div>
+        <div>
+          <span>03</span><strong>Make it stick.</strong>
+          <p>Give the ones you missed another listen.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span
+        >SHÙ 数字 <span class="muted">/ A little better, every rep.</span></span
+      ><span
+        >Built for curious ears.
+        <button id="privacy" class="text-button">Privacy</button>
+        <a
+          href="https://github.com/batman-begun/hanzi_hub"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Source ↗</a
+        ></span
+      >
+    </footer>
+    <dialog id="guide">
+      <button class="close" aria-label="Close field notes">×</button>
+      <div class="eyebrow">POCKET FIELD NOTES</div>
+      <h2>A few numbers.<br />A whole new world.</h2>
+      <p>
+        Play the clip, type what you hear, then check. Every workout has ten
+        questions. Missed questions get a second round.
+      </p>
+      <dl>
+        <dt>十 · shí / ten</dt>
+        <dd>十二 = 12. 二十 = 20. 二十二 = 22.</dd>
+        <dt>零 · líng / zero</dt>
+        <dd>一百零五 = 105. The zero tells you a place is missing.</dd>
+        <dt>万 · wàn / ten thousand</dt>
+        <dd>一万 = 10,000. 三万 = 30,000.</dd>
+        <dt>元 · 角 · 分 / money</dt>
+        <dd>三元五角 = ¥3.50. 三元零五分 = ¥3.05.</dd>
+        <dt>两点 · liǎng diǎn / two o’clock</dt>
+        <dd>十四点零五分 = 14:05. Enter times using the 24-hour clock.</dd>
+        <dt>幺 · yāo / one on the phone</dt>
+        <dd>Phone strings use 幺 for 1. Enter all 11 digits.</dd>
+      </dl>
+      <p class="muted">
+        Audio is synthetic Mandarin, not a native-speaker recording. Pinyin
+        shows dictionary tones; natural speech can change 一 / 不 and
+        consecutive third tones. This focused gym is practice, not a proficiency
+        assessment.
+      </p>
+      <h3 id="privacy-heading">Your ears. Your data.</h3>
+      <p>
+        No account, ads, analytics, or tracking scripts. Your rep count and
+        accuracy stay in this browser. Audio and fonts are served with this
+        site; the host receives ordinary web requests. Clearing browser data
+        removes your progress. You can also clear it below.
+      </p>
+      <p class="muted">
+        144 prepared audio questions across four workouts and three levels. Each
+        session draws ten questions from the selected set of twelve. Audio:
+        AISHELL-3 / Icefall VITS, via sherpa-onnx.
+        <a href="audio-notice.txt">Audio credits ↗</a>
+      </p>
+      <button id="erase" class="text-button">Clear saved progress</button>
+    </dialog>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

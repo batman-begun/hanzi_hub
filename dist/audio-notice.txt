@@ -1,0 +1,17 @@
+SHÙ Mandarin Number Gym — synthetic audio provenance
+
+All 144 .m4a practice clips were generated offline specifically for this project.
+Model: csukuangfj/icefall-tts-aishell3-vits-low-2024-04-06
+Model card: https://huggingface.co/csukuangfj/icefall-tts-aishell3-vits-low-2024-04-06
+Model license: Apache-2.0 (declared by the model author)
+Training corpus: AISHELL-3, https://www.openslr.org/93/ (Apache-2.0)
+Inference: sherpa-onnx 2.0.1, https://github.com/k2-fsa/sherpa-onnx (Apache-2.0)
+Voice: synthetic AISHELL-3 speaker 66. No endorsement or real speaker identity is claimed.
+The Apache-2.0 license is included in APACHE-2.0.txt.
+
+These are synthetic training aids, not native-speaker recordings. The model uses
+dictionary pronunciation; tonal sandhi and natural conversational rhythm may vary.
+Prepared text and expected answers are defined in engine.js. No speech recognition,
+voice recording, paid inference, or runtime model download is used in this app.
+
+Fonts: DM Sans and Manrope, SIL Open Font License 1.1; licenses are in fonts/.
