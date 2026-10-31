@@ -32,8 +32,22 @@ Audio is synthetic. These checks establish generated, decodable files, not nativ
 
 ## Public deployment verification
 
-Sites version 1 deployed successfully. The root document and sampled audio each returned HTTP 200 to curl without cookies. Chrome on the live URL decoded audio (readyState 4, finite duration), accepted the expected answer, and reported no console errors. Live desktop/mobile screenshots were saved. The final revision also removes duplicate phone answers and packages assets for an offline, dependency-free build; its version is recorded after publication.
+Sites version 1 deployed successfully. The root document and sampled audio each returned HTTP 200 to curl without cookies. Chrome on the live URL decoded audio (readyState 4, finite duration), accepted the expected answer, and reported no console errors. Live desktop/mobile screenshots were saved. Sites version 2 deployed successfully with the duplicate-phone fix. Its live engine.js and a regenerated phone clip each returned HTTP 200 without cookies and matched local SHA-256 hashes. The live phone workout played a complete 3.5-second clip (readyState 4, ended=true, no media error). Enter submitted an expected phone answer correctly at 390px.
+
+GitHub publication: https://github.com/batman-begun/hanzi_hub
+
+A fresh public clone at code commit ccd260fd5d32ed2c62707048d906a808dc8563cd passed all 8 tests and built without dependency installation or network use. All 157 restored web files matched the deployed source checkout byte-for-byte. This final documentation update does not change app code.
+
+Production: https://shu-mandarin-number-gym.batmanbegun.chatgpt.site
+
+Sites source commit: ce9deaf35bed131139201448821a502873e9fa4f
+
+Sites saved version: appgprj_6ae5731f39748191b6cc51b09e6323ed~appgver_aa10a39ffbbc81919b81ce92dff14086
+
+Deployment: appgdep_6ae576bd191881918e5ad1aa76d826a5
+
+Deployment provider: Sites. Vercel configuration is included and the offline build was verified; no Vercel deployment is claimed.
 
 ## Pending separate evidence
 
- Physical iPhone/Android, Safari, screen-reader walkthrough, and native Mandarin teacher pronunciation review have not been performed.
+Physical iPhone/Android, Safari, screen-reader walkthrough, and native Mandarin teacher pronunciation review have not been performed.
