@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -22,6 +22,12 @@
       <a class="brand" href="./" aria-label="SHÙ home"
         >SHÙ<span lang="zh">数字</span><i></i></a
       ><span class="header-note">MANDARIN NUMBER GYM</span
+      ><label class="language-picker" data-no-translate
+        ><span class="sr-only">Ngôn ngữ / Language</span
+        ><select id="language" aria-label="Ngôn ngữ / Language">
+          <option value="vi">Tiếng Việt</option>
+          <option value="en">English</option>
+        </select></label
       ><button id="guide-open" class="text-button">
         Field notes <span>↗</span>
       </button>
@@ -167,7 +173,8 @@
     </main>
     <footer>
       <span
-        >SHÙ 数字 <span class="muted">/ A little better, every rep.</span></span
+        >SHÙ 数字 <span class="release-tag" data-no-translate>MVP v0.5</span>
+        <span class="muted">/ A little better, every rep.</span></span
       ><span
         >Built for curious ears.
         <button id="privacy" class="text-button">Privacy</button>
@@ -222,6 +229,7 @@
       </p>
       <button id="erase" class="text-button">Clear saved progress</button>
     </dialog>
-    <script type="module" src="app.js?v=google-translate-v1"></script>
+    <script type="module" src="app.js?v=mvp-0.5"></script>
+    <script type="module" src="locale.js?v=mvp-0.5"></script>
   </body>
 </html>

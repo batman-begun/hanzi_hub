@@ -56,7 +56,7 @@ const hints = {
     "Tricky minutes · Catch the zero.",
   ],
   phones: [
-    "11 digits · A slower first listen.",
+    "11 digits · Get to know each digit.",
     "11 digits · Your everyday pace.",
     "11 digits · Keep up with the flow.",
   ],

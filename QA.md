@@ -61,3 +61,7 @@ Deployment provider: Sites. Vercel configuration is included and the offline bui
 ## Pending separate evidence
 
 Physical iPhone/Android, Safari, screen-reader walkthrough, and native Mandarin teacher pronunciation review have not been performed.
+
+## MVP v0.5 — Vietnamese interface (2026-10-31)
+
+Default Vietnamese plus persistent English selector; same live session survives switching. Chrome 390px/1440px: no horizontal overflow; all four modes, invalid inputs, correct/wrong feedback and translated tips, full 10-question results (9/10), missed-question review, guide/privacy and reload persistence checked. Existing 10 audio/engine groups pass; approved audio archive unchanged. No physical iOS/Safari claim. No Batcave producer/showcase propagation in this release.

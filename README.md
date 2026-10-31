@@ -68,3 +68,7 @@ Browser QA uses Chrome at desktop and emulated mobile viewport sizes. Physical i
 Audio source: Google Translate speech via [gTTS 2.5.4](https://github.com/pndurette/gTTS), zh-CN, com, slow=False. This third-party client is not Google Cloud TTS and future regeneration depends on undocumented upstream functionality. Playback uses packaged files and never calls that service. Full audio provenance: `dist/audio-notice.txt`. Fonts: DM Sans and Manrope, SIL OFL 1.1, notices included in `dist/fonts/`.
 
 Code: MIT. Third-party assets retain their respective notices.
+
+## MVP v0.5 — Vietnamese UI
+
+Vietnamese is the default interface; the header offers English. Language choice is stored locally. Switching translates current feedback/results without restarting the session, changing answers, audio or progress. Numbers/prices/time input conventions are explained in Vietnamese. Browser checks cover phone-width/desktop, all exercise modes, wrong/correct answers, full session/results/review, guide and language persistence. Physical iOS/Safari QA is not claimed.
