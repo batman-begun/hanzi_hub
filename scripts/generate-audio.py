@@ -1,25 +1,38 @@
-import sherpa_onnx,soundfile as sf,json,pathlib,subprocess,numpy as np
-# Optional build-time tool: pip install sherpa-onnx==2.0.1 soundfile numpy
-# Pass a directory with model.onnx, lexicon.txt, tokens.txt; see audio-notice.txt.
-import sys,shutil
-root=pathlib.Path(__file__).resolve().parents[1]
-voice=pathlib.Path(sys.argv[1]).resolve()
-ffmpeg=shutil.which('ffmpeg')
-assert ffmpeg,'Install ffmpeg before regenerating audio.'
-config=sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(vits=sherpa_onnx.OfflineTtsVitsModelConfig(model=str(voice/'model.onnx'),lexicon=str(voice/'lexicon.txt'),tokens=str(voice/'tokens.txt')),num_threads=2),silence_scale=.3)
-assert config.validate()
-tts=sherpa_onnx.OfflineTts(config)
-print('Speakers:',tts.num_speakers,flush=True)
-deck=json.loads(subprocess.check_output(['node','--input-type=module','-e',"import {deck} from './dist/engine.js';console.log(JSON.stringify(deck))"],cwd=root))
-for i,q in enumerate(deck):
- out=root/'dist/audio'/f'{q["id"]}.m4a'
- samples=tts.generate(q['spoken']+'。',sid=66,speed=.9)
- assert len(samples.samples)>1000,q
- assert np.max(np.abs(samples.samples))>.01,q
- import tempfile
- tmp=pathlib.Path(tempfile.gettempdir())/'shu-regen-clip.wav';sf.write(tmp,samples.samples,samples.sample_rate)
- subprocess.run([ffmpeg,'-v','error','-y','-i',str(tmp),'-af','loudnorm=I=-18:TP=-2:LRA=7','-c:a','aac','-b:a','48k','-movflags','+faststart',str(out)],check=True)
- if i%12==0:print(f'{i+1}/{len(deck)}',flush=True)
-print('Generated 144 open-model audio clips.',flush=True)
+"""Optional preparation tool; ordinary builds need no network or TTS dependency.
+Install gTTS==2.5.4 and requests in a separate environment. Requires ffmpeg/ffprobe.
+Matches the owner-approved zh-CN/com/slow=False reference. No paid API or key.
+"""
+import json
+import pathlib
+import subprocess
+import time
 
-if tmp.exists():tmp.unlink()
+import requests
+from gtts import gTTS
+
+root = pathlib.Path(__file__).resolve().parents[1]
+deck = json.loads(subprocess.check_output([
+    'node', '--input-type=module', '-e',
+    "import {deck} from './dist/engine.js';console.log(JSON.stringify(deck))"
+], cwd=root))
+original_send = requests.Session.send
+
+
+def verified_send(self, request, **kwargs):
+    kwargs['verify'] = True
+    return original_send(self, request, **kwargs)
+
+
+requests.Session.send = verified_send
+out = root / 'dist/audio'
+out.mkdir(parents=True, exist_ok=True)
+for question in deck:
+    path = out / ('gt-v1-' + question['id'] + '.mp3')
+    if path.exists():
+        continue
+    gTTS(question['spoken'], lang='zh-CN', tld='com', slow=False,
+         timeout=(10, 30)).save(str(path))
+    subprocess.run(['ffmpeg', '-v', 'error', '-i', str(path), '-f', 'null', '-'],
+                   check=True)
+    time.sleep(.25)
+print('Prepared 144 practice MP3 clips. Repack assets.json.gz before release.')

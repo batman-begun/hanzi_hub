@@ -1,3 +1,13 @@
+# Google Translate voice release — 2026-10-31
+
+Owner approved the exact normal-speed zh-CN/com reference for 14:05 / 十四点零五分: “chốt, hài lòng 100%!!! apply vioice này cho product!!!!”. This release replaces the former Icefall bank with 144 prepared Google Translate MP3 clips and includes that unchanged approved reference. Normal playback is 1.0 across every mode/level, including phones; optional slow replay is 0.8 with pitch preservation. No audio processing or extra punctuation is applied to the returned files. Filenames and the entry module URL are versioned to avoid mixing cached old audio with the new bank.
+
+Generation validation: all prepared clips must match the engine's spoken text/answer and decode fully with ffmpeg. The asset regression test verifies every clip's SHA-256, count, and approved-reference bytes. This is technical/source verification; owner approval of one voice reference is not individual teacher review of every question.
+
+New release build/browser/live evidence is recorded in the release handoff. The original release history below is retained as historical evidence, including its former voice-quality limitation.
+
+---
+
 # SHÙ verification record — 2026-10-31
 
 ## Automated checks

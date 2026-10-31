@@ -15,7 +15,7 @@ Public reachability is recorded separately in QA.md after deployment verificatio
 - Four workouts: numbers, prices, 24-hour times, and fictional phone strings.
 - Three levels and 144 prepared audio questions: 12 per workout/level, shuffled into ten-question sessions.
 - Numbers from 0 to 99,999, explicit 元 / 角 / 分 prices, missing-place 零, and phone 幺.
-- Synthetic Mandarin clips generated offline using an Apache-2.0 model. About 1.73 MB of audio total; each question loads only its own clip.
+- Prepared Google Translate Mandarin MP3 clips using the owner-approved zh-CN/com/normal-speed settings. Original returned audio is preserved; each question loads only its own clip.
 - Correct/incorrect feedback with characters, dictionary-tone pinyin, a short pattern explanation, and missed-question review.
 - Local progress with a clear-data control. No accounts, analytics, ad scripts, microphone access, secrets, or paid API calls.
 - Locally hosted fonts. Responsive layout, visible keyboard focus, labelled inputs, reduced-motion support, keyboard submission, and status announcements.
@@ -29,7 +29,7 @@ npm test
 npm run dev
 ```
 
-Open http://localhost:4173. `npm run build` restores 144 audio clips and the fonts from the included `assets.json.gz` into `dist/`. No network, model download, or API key is required. `npm run dev` does this automatically.
+Open http://localhost:4173. `npm run build` restores 144 practice clips, the approved reference clip and the fonts from the included `assets.json.gz` into `dist/`. No network, model download, or API key is required. `npm run dev` does this automatically.
 
 ## Deploy
 
@@ -53,6 +53,10 @@ GitHub Pages: the repository includes a manual `workflow_dispatch` workflow to d
 
 `tests/engine.test.js` — edge cases, full numeric range structural invariants, balanced deck, answer roundtrips
 
+## Approved Google Translate voice
+
+The owner approved the exact 14:05 / 十四点零五分 reference on 2026-10-31. The reference is included unchanged at `dist/audio/gt-v1-reference-14-05.mp3`. All workouts and levels use original 1.0 playback; optional slow replay uses pitch-preserving 0.8. Prepared audio assets have versioned names so an older browser cache cannot mix the previous voice into a new workout. A voice reference approval is not a claim of individual native-teacher review of every clip.
+
 ## Limits and honest scope
 
 This is a focused listening MVP, not a full Mandarin course or proficiency test. Sessions sample a finite bank; there is no claim of unlimited new audio. Synthetic pronunciation and tone sandhi have not received a native teacher's review. Pinyin shows dictionary tones. The price workout uses explicit textbook currency units rather than every conversational variant (块, 毛, omitted units). Time answers use the 24-hour clock. Generated phone strings are practice content and must not be dialed; they are not checked against assigned real-world phone numbers.
@@ -61,6 +65,6 @@ Browser QA uses Chrome at desktop and emulated mobile viewport sizes. Physical i
 
 ## Credits
 
-Audio model: [Icefall AISHELL-3 VITS](https://huggingface.co/csukuangfj/icefall-tts-aishell3-vits-low-2024-04-06), Apache-2.0. Generated with [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx), speaker 66. Full audio provenance: `dist/audio-notice.txt`. Fonts: DM Sans and Manrope, SIL OFL 1.1, notices included in `dist/fonts/`.
+Audio source: Google Translate speech via [gTTS 2.5.4](https://github.com/pndurette/gTTS), zh-CN, com, slow=False. This third-party client is not Google Cloud TTS and future regeneration depends on undocumented upstream functionality. Playback uses packaged files and never calls that service. Full audio provenance: `dist/audio-notice.txt`. Fonts: DM Sans and Manrope, SIL OFL 1.1, notices included in `dist/fonts/`.
 
 Code: MIT. Third-party assets retain their respective notices.

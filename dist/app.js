@@ -1,3 +1,4 @@
+import { audioSource, NORMAL_RATE, SLOW_RATE } from "./audio-config.js";
 import { deck, normalize } from "./engine.js";
 const $ = (s) => document.querySelector(s);
 let mode = "numbers",
@@ -137,12 +138,9 @@ async function play(slow = false) {
   }
   stop();
   let token = playToken;
-  audio.src = `audio/${round[index].id}.m4a`;
-  audio.playbackRate = slow
-    ? 0.7
-    : mode === "phones"
-      ? [0.8, 1, 1.1][level]
-      : 1;
+  audio.src = audioSource(round[index].id);
+  audio.playbackRate = slow ? SLOW_RATE : NORMAL_RATE;
+  audio.preservesPitch = true;
   $("#audio-status").textContent = slow
     ? "Slower. You’ve got time."
     : "Listening…";

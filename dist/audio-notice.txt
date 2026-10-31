@@ -1,17 +1,30 @@
-SHÙ Mandarin Number Gym — synthetic audio provenance
+SHÙ Mandarin Number Gym — prepared audio provenance, Google Translate v1
 
-All 144 .m4a practice clips were generated offline specifically for this project.
-Model: csukuangfj/icefall-tts-aishell3-vits-low-2024-04-06
-Model card: https://huggingface.co/csukuangfj/icefall-tts-aishell3-vits-low-2024-04-06
-Model license: Apache-2.0 (declared by the model author)
-Training corpus: AISHELL-3, https://www.openslr.org/93/ (Apache-2.0)
-Inference: sherpa-onnx 2.0.1, https://github.com/k2-fsa/sherpa-onnx (Apache-2.0)
-Voice: synthetic AISHELL-3 speaker 66. No endorsement or real speaker identity is claimed.
-The Apache-2.0 license is included in APACHE-2.0.txt.
+Source: Google Translate speech functionality through gTTS 2.5.4.
+Language: zh-CN (Chinese Simplified / Mandarin); domain: com; slow: false.
+The original returned MP3 bytes are stored without time stretching, pitch changes,
+normalization, transcoding or extra punctuation. Normal playback is 1.0 for every
+mode and level. Optional slow replay uses pitch-preserving 0.8 playback.
 
-These are synthetic training aids, not native-speaker recordings. The model uses
-dictionary pronunciation; tonal sandhi and natural conversational rhythm may vary.
-Prepared text and expected answers are defined in engine.js. No speech recognition,
-voice recording, paid inference, or runtime model download is used in this app.
+Owner-approved voice reference: 十四点零五分 / 14:05 (2026-10-31).
+Reference file: audio/gt-v1-reference-14-05.mp3
+Reference SHA-256: 033c9f13c1d75f255e1aea7094225c72e681e5061d957c99f46088c269c6e470
 
-Fonts: DM Sans and Manrope, SIL Open Font License 1.1; licenses are in fonts/.
+144 practice clips are generated once before publication and served with this
+site. The app makes no runtime Google Translate/TTS request, needs no API key,
+and does not send your answers or progress to Google. Fonts remain self-hosted.
+
+Client documentation: https://gtts.readthedocs.io/en/latest/
+Client repository: https://github.com/pndurette/gTTS
+This is not Google Cloud TTS, an official Google integration or an endorsement.
+gTTS is a third-party client of undocumented Translate speech functionality;
+future regeneration can be affected by upstream changes. Prepared files continue
+to play independently of that service. The client's MIT license does not by
+itself grant a license to Google's service or voice output.
+
+Speech is synthetic. The owner approved a voice reference; this does not claim
+that a native teacher has individually reviewed all 144 questions. Pinyin shows
+dictionary tones; natural tonal sandhi may differ.
+
+The former Icefall AISHELL-3 audio bank is no longer used in this release.
+Fonts: DM Sans and Manrope, SIL OFL 1.1; notices included in fonts/.

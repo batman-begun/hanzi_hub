@@ -1,0 +1,1310 @@
+{
+  "version": "google-translate-v1",
+  "source": "Google Translate speech through gTTS 2.5.4 (unofficial client, not Google Cloud TTS)",
+  "lang": "zh-CN",
+  "tld": "com",
+  "slow": false,
+  "postprocessing": "none",
+  "normal_playback_rate": 1.0,
+  "tls_verify": true,
+  "approved_reference_sha256": "033c9f13c1d75f255e1aea7094225c72e681e5061d957c99f46088c269c6e470",
+  "created_at": "2026-10-31T11:31:15.629386+00:00",
+  "clips": [
+    {
+      "id": "numbers-0-0",
+      "text": "零",
+      "answer": "0",
+      "file": "gt-v1-numbers-0-0.mp3",
+      "sha256": "c87bf0f913159fcf6f4a555f2ce073049532e0c6891bcc31dee99f4cb5d134a5",
+      "duration": 0.816,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-1",
+      "text": "一",
+      "answer": "1",
+      "file": "gt-v1-numbers-0-1.mp3",
+      "sha256": "97242e422d7973ba208675d03485eef162b7e70848a191d48f494962f98ec039",
+      "duration": 0.768,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-2",
+      "text": "二",
+      "answer": "2",
+      "file": "gt-v1-numbers-0-2.mp3",
+      "sha256": "c80df0b4af8b41f96db9c345c7ff0cb97f8965a5996700164493fbb221a42ad8",
+      "duration": 0.768,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-3",
+      "text": "七",
+      "answer": "7",
+      "file": "gt-v1-numbers-0-3.mp3",
+      "sha256": "16b704ef61d37a824e8474e350704796d7ac860b4f1b3d2291783011799812b5",
+      "duration": 0.888,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-4",
+      "text": "十",
+      "answer": "10",
+      "file": "gt-v1-numbers-0-4.mp3",
+      "sha256": "be42f889d63da4d2ff096fc1f36900272d6271ef94255f2cc9d807f2cc421a2a",
+      "duration": 0.936,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-5",
+      "text": "十一",
+      "answer": "11",
+      "file": "gt-v1-numbers-0-5.mp3",
+      "sha256": "c0d86198a3b53e57b2265138b282e31cac246eed9711169f16bd25505ee9f4c9",
+      "duration": 1.104,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-6",
+      "text": "十六",
+      "answer": "16",
+      "file": "gt-v1-numbers-0-6.mp3",
+      "sha256": "ce47f3f2bc0ed1ea9d6edd4a196ce1e07059f8230481eda2ecaa24e2654f117e",
+      "duration": 1.104,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-7",
+      "text": "二十",
+      "answer": "20",
+      "file": "gt-v1-numbers-0-7.mp3",
+      "sha256": "83b512f448c96ed5d0cf2ca88aa7d44f72a9c03656cbf9197a98bac472aad475",
+      "duration": 1.128,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-8",
+      "text": "二十八",
+      "answer": "28",
+      "file": "gt-v1-numbers-0-8.mp3",
+      "sha256": "fb68469f81826ecd30812e947752669bae1981d636d6594832bbbdee5c1114ef",
+      "duration": 1.224,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-9",
+      "text": "四十",
+      "answer": "40",
+      "file": "gt-v1-numbers-0-9.mp3",
+      "sha256": "6bf91728779ebbc8126007cddc51eb89a99fd65d30210a15e3bd9fa50819d90f",
+      "duration": 1.2,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-10",
+      "text": "六十七",
+      "answer": "67",
+      "file": "gt-v1-numbers-0-10.mp3",
+      "sha256": "da0f7c4e55942110abf25eaeed3ca7dc87e53e1781bb3490fdd3a9184c66e273",
+      "duration": 1.296,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-0-11",
+      "text": "九十九",
+      "answer": "99",
+      "file": "gt-v1-numbers-0-11.mp3",
+      "sha256": "38f1e71d2f3f4481e5a12058b1b196d8f81443f217558c9587f9538fcc56df51",
+      "duration": 1.32,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-0",
+      "text": "一百",
+      "answer": "100",
+      "file": "gt-v1-numbers-1-0.mp3",
+      "sha256": "8cfcc5fa84c50907fbf7876b49303929d4e7142defdbf88db4fc7e31a4421736",
+      "duration": 1.152,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-1",
+      "text": "一百零一",
+      "answer": "101",
+      "file": "gt-v1-numbers-1-1.mp3",
+      "sha256": "c6550218a23ab92c64b7d37ee6209577e5a964682d5ed8e0959c059ff913359d",
+      "duration": 1.416,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-2",
+      "text": "一百一十",
+      "answer": "110",
+      "file": "gt-v1-numbers-1-2.mp3",
+      "sha256": "954a45f5dad55e0f9ba90a6101c0bd98362f95a475b9a21f2382fcfad81b44ec",
+      "duration": 1.56,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-3",
+      "text": "二百",
+      "answer": "200",
+      "file": "gt-v1-numbers-1-3.mp3",
+      "sha256": "f635c4c45415471863f7abd428e6b7ec8c50494d67b0a3d36d7be07cb8b745b4",
+      "duration": 1.128,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-4",
+      "text": "二百零五",
+      "answer": "205",
+      "file": "gt-v1-numbers-1-4.mp3",
+      "sha256": "59c19f1ae6ff540f378dc8a0aaebd9e61a24771bd75534f1d330daca280016a7",
+      "duration": 1.488,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-5",
+      "text": "二百五十",
+      "answer": "250",
+      "file": "gt-v1-numbers-1-5.mp3",
+      "sha256": "c84c393f9c8d310178c4208591a8980c8bb828589c87b20509a9cd233c64bb23",
+      "duration": 1.584,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-6",
+      "text": "五百零七",
+      "answer": "507",
+      "file": "gt-v1-numbers-1-6.mp3",
+      "sha256": "b7d7328be1ba0dca77d0e334f51c12d08f8ce0dd29ab63dceb72abb57b4e2387",
+      "duration": 1.464,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-7",
+      "text": "九百九十九",
+      "answer": "999",
+      "file": "gt-v1-numbers-1-7.mp3",
+      "sha256": "6219af2ea6ef831b2ac8dc5bbb19c2e59fe769b9c7829f8d10fc80490d8f6548",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-8",
+      "text": "一千",
+      "answer": "1000",
+      "file": "gt-v1-numbers-1-8.mp3",
+      "sha256": "efd89a2a7ea563dc4dbd0b938cda9034467bfbab01a29d3bda85524d843c0b62",
+      "duration": 1.128,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-9",
+      "text": "一千零一",
+      "answer": "1001",
+      "file": "gt-v1-numbers-1-9.mp3",
+      "sha256": "bef7bd8890b1692f8c29c927c71607a04bd5a8f4ff0d445201015c4d2308adc7",
+      "duration": 1.512,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-10",
+      "text": "一千零一十",
+      "answer": "1010",
+      "file": "gt-v1-numbers-1-10.mp3",
+      "sha256": "d2a043a684f595105c9bc62a8bcd86b6c9afe9ec1bd752062d15cfd4de44f3e2",
+      "duration": 2.04,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-1-11",
+      "text": "二千零二十六",
+      "answer": "2026",
+      "file": "gt-v1-numbers-1-11.mp3",
+      "sha256": "9969cfcffa4c4ff3a207486032f0c6151c157d59b00c2f8ee181c649ab2f78c9",
+      "duration": 2.088,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-0",
+      "text": "一万",
+      "answer": "10000",
+      "file": "gt-v1-numbers-2-0.mp3",
+      "sha256": "907070856280dcbf6623d8d5d613c49bb52f5aa3d3bd57f9d649ca6e71a1f01c",
+      "duration": 0.984,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-1",
+      "text": "一万零一",
+      "answer": "10001",
+      "file": "gt-v1-numbers-2-1.mp3",
+      "sha256": "cd2e1a203946869952d14ee9d04700965e787e418c3867bfe9cef3fcbdce0888",
+      "duration": 1.416,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-2",
+      "text": "一万零一十",
+      "answer": "10010",
+      "file": "gt-v1-numbers-2-2.mp3",
+      "sha256": "bb5369094f91ff27f5e22d840a98805c0a93730fa6b23e71331792568cb8609b",
+      "duration": 1.992,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-3",
+      "text": "一万零一百",
+      "answer": "10100",
+      "file": "gt-v1-numbers-2-3.mp3",
+      "sha256": "2081374511a794d57eb8d1abc5fa09227a3767615d6e0e4e8d502a43bb63ef10",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-4",
+      "text": "一万一千",
+      "answer": "11000",
+      "file": "gt-v1-numbers-2-4.mp3",
+      "sha256": "6b714be57c4d1c4164a6ef717aa2a5f87da486559393857c94c83ec5d1a144fa",
+      "duration": 1.536,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-5",
+      "text": "二万零五",
+      "answer": "20005",
+      "file": "gt-v1-numbers-2-5.mp3",
+      "sha256": "fa4b15af114ebf69437aaeba09e28f05257ee76100eead9175bc3905774559cc",
+      "duration": 1.56,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-6",
+      "text": "三万零四百零八",
+      "answer": "30408",
+      "file": "gt-v1-numbers-2-6.mp3",
+      "sha256": "751fccc223a1df2c071f26c16422139d0bfa347c232c5f8049703cb8898b72b7",
+      "duration": 2.4,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-7",
+      "text": "五万",
+      "answer": "50000",
+      "file": "gt-v1-numbers-2-7.mp3",
+      "sha256": "c86ed76512c53746208e7109b4be34cf1fb1a01ee51c0166fb349d9572ef5e76",
+      "duration": 1.056,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-8",
+      "text": "六万零六",
+      "answer": "60006",
+      "file": "gt-v1-numbers-2-8.mp3",
+      "sha256": "231e7d5ccd22c66c027a691838184fb931a2b3bb83b8dbd038a53432b73b125a",
+      "duration": 1.488,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-9",
+      "text": "九万零九十",
+      "answer": "90090",
+      "file": "gt-v1-numbers-2-9.mp3",
+      "sha256": "a6d10af0fb6734a4576c65528176459a09a74691c00bd4873fe52a6c8b8345ec",
+      "duration": 2.04,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-10",
+      "text": "九万九千零一",
+      "answer": "99001",
+      "file": "gt-v1-numbers-2-10.mp3",
+      "sha256": "a594f9aa398fed5c7f2c47195dfde1725b3860030dc090bbc4a0a702162bbba9",
+      "duration": 2.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "numbers-2-11",
+      "text": "九万九千九百九十九",
+      "answer": "99999",
+      "file": "gt-v1-numbers-2-11.mp3",
+      "sha256": "c202e0ea8b50796b13376ec1b0edcd0f051f3bc4cf8d3fc3d04ed2c7d648d4fa",
+      "duration": 2.952,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-0",
+      "text": "一元",
+      "answer": "1.00",
+      "file": "gt-v1-prices-0-0.mp3",
+      "sha256": "83f50537b5f9d8f05d7a095b8bacc52f3caef7e94444b305bd0c7a64b143bb5c",
+      "duration": 1.08,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-1",
+      "text": "二元",
+      "answer": "2.00",
+      "file": "gt-v1-prices-0-1.mp3",
+      "sha256": "19d071f2bee02d85249d8c61391484b2acb49c7a39c733538715446057250b1c",
+      "duration": 1.176,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-2",
+      "text": "五元",
+      "answer": "5.00",
+      "file": "gt-v1-prices-0-2.mp3",
+      "sha256": "2c6a0c9325c7e61a260ba7eeda67136b7d7270c8cede68aeb0d54633ec2fa64a",
+      "duration": 1.152,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-3",
+      "text": "九元",
+      "answer": "9.00",
+      "file": "gt-v1-prices-0-3.mp3",
+      "sha256": "db9eac35dbfee9a1162b29499a455cb2c48b8f06df5f15fb9495377e38bf9fef",
+      "duration": 1.176,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-4",
+      "text": "十元",
+      "answer": "10.00",
+      "file": "gt-v1-prices-0-4.mp3",
+      "sha256": "d15dbb0fcc667afe8b37e34fd4ef07dd7263c4f68787209d5843181ea377ef2b",
+      "duration": 1.248,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-5",
+      "text": "十二元",
+      "answer": "12.00",
+      "file": "gt-v1-prices-0-5.mp3",
+      "sha256": "7dbe74ed53b8d42f8fe9670816b0d77e28a877db8666d2f6adefc93cee9b1484",
+      "duration": 1.464,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-6",
+      "text": "十五元",
+      "answer": "15.00",
+      "file": "gt-v1-prices-0-6.mp3",
+      "sha256": "94405ef1e6eb90d784545626bfea1e3b25c120d64aaa88e0292271e82ae82299",
+      "duration": 1.44,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-7",
+      "text": "十八元",
+      "answer": "18.00",
+      "file": "gt-v1-prices-0-7.mp3",
+      "sha256": "c4322a31fadd100059182eb0a7d8aff20b187f9ffbec658e41eef6eb1fe0bfc6",
+      "duration": 1.464,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-8",
+      "text": "二十元",
+      "answer": "20.00",
+      "file": "gt-v1-prices-0-8.mp3",
+      "sha256": "9a76763a7b8c0bd30b856120bb58aca2bdf683fba7094fe381abe3a14997b1fe",
+      "duration": 1.392,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-9",
+      "text": "二十八元",
+      "answer": "28.00",
+      "file": "gt-v1-prices-0-9.mp3",
+      "sha256": "df8f1775adb9231c63549d9cac96a9fe0692df2a00748b3a7833e9d26f0fa397",
+      "duration": 1.608,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-10",
+      "text": "三十五元",
+      "answer": "35.00",
+      "file": "gt-v1-prices-0-10.mp3",
+      "sha256": "6d02389b4b00fdcedec2d614e3f72194a8bd374a2407eadb27249f2920071594",
+      "duration": 1.656,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-0-11",
+      "text": "九十九元",
+      "answer": "99.00",
+      "file": "gt-v1-prices-0-11.mp3",
+      "sha256": "4e5b65f01c316906750f55a1f2ad7fbd020d3ec33b81869d61cd4ff2516022ea",
+      "duration": 1.584,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-0",
+      "text": "一元零五分",
+      "answer": "1.05",
+      "file": "gt-v1-prices-1-0.mp3",
+      "sha256": "493b90daf0d0e32b00f796f73030bd7029e1ab29e83f7cb5c199ac61b0ba96f4",
+      "duration": 1.704,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-1",
+      "text": "一元一角",
+      "answer": "1.10",
+      "file": "gt-v1-prices-1-1.mp3",
+      "sha256": "0889eb50537607d3e3cfd5d5272594952f35767a84e5e9019086d61aacdf5111",
+      "duration": 1.488,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-2",
+      "text": "二元零八分",
+      "answer": "2.08",
+      "file": "gt-v1-prices-1-2.mp3",
+      "sha256": "dda6717ac7af939ba28d9860620f0be10b603f9adf282d0de82e3df22f27427c",
+      "duration": 1.992,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-3",
+      "text": "二元五角",
+      "answer": "2.50",
+      "file": "gt-v1-prices-1-3.mp3",
+      "sha256": "e3fbff7880d5c361bf2dffe746a300d39d23eaaf8bdb6cb2e2fce09d7281dce8",
+      "duration": 1.608,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-4",
+      "text": "三元零五分",
+      "answer": "3.05",
+      "file": "gt-v1-prices-1-4.mp3",
+      "sha256": "5c95cd567e71cca65d9ed3b04eedd2a5c2bcb796cca2cafac9fc70686b6ee3db",
+      "duration": 2.016,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-5",
+      "text": "六元八角",
+      "answer": "6.80",
+      "file": "gt-v1-prices-1-5.mp3",
+      "sha256": "4284f5b393641aa271b4d04340ea6107133eafb0f3914fcd51e8a5ca2fedb877",
+      "duration": 1.584,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-6",
+      "text": "九元九角",
+      "answer": "9.90",
+      "file": "gt-v1-prices-1-6.mp3",
+      "sha256": "eaa43f8ee52027a840cd3a73c6783655e3bad6f6c573cbe47b6eb996325f9a65",
+      "duration": 1.656,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-7",
+      "text": "十二元零五分",
+      "answer": "12.05",
+      "file": "gt-v1-prices-1-7.mp3",
+      "sha256": "7b34f1d4588a6345b9a26b3957c8bd3211f6972ea13af9f4d388ce366883aa09",
+      "duration": 2.256,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-8",
+      "text": "十五元八角",
+      "answer": "15.80",
+      "file": "gt-v1-prices-1-8.mp3",
+      "sha256": "9de1349605292dbbb7ef249ab9bba1fa5e4966c66ab45e75cd8063d875ad382a",
+      "duration": 1.872,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-9",
+      "text": "二十元零八分",
+      "answer": "20.08",
+      "file": "gt-v1-prices-1-9.mp3",
+      "sha256": "fa880a1471655cbcff2a705a2310535a629d9011654d1df94d23a0eb7b3d34f9",
+      "duration": 2.208,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-10",
+      "text": "二十八元九角",
+      "answer": "28.90",
+      "file": "gt-v1-prices-1-10.mp3",
+      "sha256": "df87fa501e64c5f9d402b2c510695f3fa3f02645695040b4fee9728067a68c68",
+      "duration": 2.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-1-11",
+      "text": "九十九元九角九分",
+      "answer": "99.99",
+      "file": "gt-v1-prices-1-11.mp3",
+      "sha256": "177ae0a541787fdaa66fe01cc66a9a0eba0a4bf49121195d5935b3816bae3088",
+      "duration": 2.808,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-0",
+      "text": "一百元零五分",
+      "answer": "100.05",
+      "file": "gt-v1-prices-2-0.mp3",
+      "sha256": "ad378620c39ba2edf5a2e6d34310958562da7e1df9cf53df964d3a1c6a701351",
+      "duration": 2.16,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-1",
+      "text": "一百元五角",
+      "answer": "100.50",
+      "file": "gt-v1-prices-2-1.mp3",
+      "sha256": "17fc2be2769d59e90b29a966e0c9c89a6d7dd6a9aae8a53d12ee7ce7ba90604e",
+      "duration": 1.752,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-2",
+      "text": "一百零一元零一分",
+      "answer": "101.01",
+      "file": "gt-v1-prices-2-2.mp3",
+      "sha256": "7167769537d6fc1718def8dae9f75d3aeebcfd49dbc34312bf3a06e3ba847d05",
+      "duration": 2.568,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-3",
+      "text": "二百元零八分",
+      "answer": "200.08",
+      "file": "gt-v1-prices-2-3.mp3",
+      "sha256": "0448d7890eb808f56838ff7aa8e18f3a0dfad98f3de86da66ee146ba8a1a6065",
+      "duration": 2.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-4",
+      "text": "二百五十元五角",
+      "answer": "250.50",
+      "file": "gt-v1-prices-2-4.mp3",
+      "sha256": "2057782c1d03973f89031fd68490c2a89678ffb3a2ddd0944e569d1b5215d8f6",
+      "duration": 2.376,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-5",
+      "text": "三百元零九分",
+      "answer": "300.09",
+      "file": "gt-v1-prices-2-5.mp3",
+      "sha256": "88e639eafc0e8df6fc9897bb7d6f8fc8cb91e0c3662b87bb8d344419946ea21c",
+      "duration": 2.256,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-6",
+      "text": "五百零四元八角",
+      "answer": "504.80",
+      "file": "gt-v1-prices-2-6.mp3",
+      "sha256": "e436a1f05d4e9b9fb2f83a7006e182ca8b56ff855ee1110f558127eec3d07c54",
+      "duration": 2.376,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-7",
+      "text": "六百零八元零八分",
+      "answer": "608.08",
+      "file": "gt-v1-prices-2-7.mp3",
+      "sha256": "a6acd366a2a0d4e1140776151e4b6a428eed956d985e9a88b1f41c6e35863b85",
+      "duration": 2.664,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-8",
+      "text": "八百八十元零八分",
+      "answer": "880.08",
+      "file": "gt-v1-prices-2-8.mp3",
+      "sha256": "8be3331cee6edd8b2daf2e06b3f4cf2ea2c8b050ed65b4717eb55cac8da95331",
+      "duration": 2.736,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-9",
+      "text": "九百九十九元九角九分",
+      "answer": "999.99",
+      "file": "gt-v1-prices-2-9.mp3",
+      "sha256": "f402d7d5a3cea5753869d4ebf4e5a87876ce062bd4127e0d461112b32ee14f83",
+      "duration": 3.336,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-10",
+      "text": "一百二十三元四角五分",
+      "answer": "123.45",
+      "file": "gt-v1-prices-2-10.mp3",
+      "sha256": "306206d0b3499578b1db9ec0faf94e03df0a50968c56dccb2a59bf28d9da3c01",
+      "duration": 3.192,
+      "sample_rate": 24000
+    },
+    {
+      "id": "prices-2-11",
+      "text": "八百八十八元八角八分",
+      "answer": "888.88",
+      "file": "gt-v1-prices-2-11.mp3",
+      "sha256": "09fa9f3fe076a5d907be14d16a7cc1e3eeb92067bb0cfdd24a7eb61a32250726",
+      "duration": 3.216,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-0",
+      "text": "一点",
+      "answer": "1:00",
+      "file": "gt-v1-times-0-0.mp3",
+      "sha256": "bed8cd06c4a7faf3cb9f106bb65db7c6b8bbd40234553a39415bda885e2ba4eb",
+      "duration": 1.032,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-1",
+      "text": "两点三十分",
+      "answer": "2:30",
+      "file": "gt-v1-times-0-1.mp3",
+      "sha256": "2c02d13fd9156661dcba83ebf1d932cb4f322f95d790b06200dc0bbe96cca0f6",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-2",
+      "text": "三点",
+      "answer": "3:00",
+      "file": "gt-v1-times-0-2.mp3",
+      "sha256": "4036a0e49bf5ec0c45653143cc386b2048a2bfdfad627832464f1bcaed54bbc8",
+      "duration": 1.2,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-3",
+      "text": "四点三十分",
+      "answer": "4:30",
+      "file": "gt-v1-times-0-3.mp3",
+      "sha256": "6d15c6879200b4491834f0f80513ab0226cf0e9ca2e982483d490b1e7c21e8af",
+      "duration": 1.944,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-4",
+      "text": "五点",
+      "answer": "5:00",
+      "file": "gt-v1-times-0-4.mp3",
+      "sha256": "067eb5e25e20994665c4efb76b58eeeea244db9c992a1d390ecc7ba1b4ae93fa",
+      "duration": 1.08,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-5",
+      "text": "六点三十分",
+      "answer": "6:30",
+      "file": "gt-v1-times-0-5.mp3",
+      "sha256": "5d0836692c91810ce783d05a953af0c1df7b4b51b1f6c2e26a7aa0d39ccaaf58",
+      "duration": 1.896,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-6",
+      "text": "七点",
+      "answer": "7:00",
+      "file": "gt-v1-times-0-6.mp3",
+      "sha256": "a0989d6dbd681dad22d5666323d9812f49dd4aab5e7b82da189136b3ec1307e8",
+      "duration": 1.152,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-7",
+      "text": "八点三十分",
+      "answer": "8:30",
+      "file": "gt-v1-times-0-7.mp3",
+      "sha256": "8f2af987833557d4b3018a62b3a91d8ed1d448ddbc3bfee6b2a4563f8d3a1275",
+      "duration": 1.896,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-8",
+      "text": "九点",
+      "answer": "9:00",
+      "file": "gt-v1-times-0-8.mp3",
+      "sha256": "0bc3251e0f1c8f36be459712fdd13e7bd1aa7d7667c2f58bb0efa34b3c63a4c0",
+      "duration": 1.152,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-9",
+      "text": "十点三十分",
+      "answer": "10:30",
+      "file": "gt-v1-times-0-9.mp3",
+      "sha256": "bb46a80376abc075608bafb1a83a34cb84437bfde69fe4cb18f9f1c20c080cd9",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-10",
+      "text": "十一点",
+      "answer": "11:00",
+      "file": "gt-v1-times-0-10.mp3",
+      "sha256": "93f53dbf6b14fa428818bb54733e490532e5042e807e108bbcd7aaad5db2b081",
+      "duration": 1.44,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-0-11",
+      "text": "零点三十分",
+      "answer": "0:30",
+      "file": "gt-v1-times-0-11.mp3",
+      "sha256": "4e5d424d515574f7e450a1079e7b6e3974727a7d6805441b4a8b40664a39d6c0",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-0",
+      "text": "一点零五分",
+      "answer": "1:05",
+      "file": "gt-v1-times-1-0.mp3",
+      "sha256": "64ca5ee65c78a4166cbdb054381a007db07b86f0ce9b2646b8f265063839fe99",
+      "duration": 1.872,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-1",
+      "text": "八点十分",
+      "answer": "8:10",
+      "file": "gt-v1-times-1-1.mp3",
+      "sha256": "0f862be5ac4e31c33465f6c2c5a06b4b355698828242aaa2759ecadb666c3711",
+      "duration": 1.584,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-2",
+      "text": "十五点十五分",
+      "answer": "15:15",
+      "file": "gt-v1-times-1-2.mp3",
+      "sha256": "156427a76dd8e6f8abf31151b6115daccd657a21848310a33cf06af7fdfa5239",
+      "duration": 2.208,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-3",
+      "text": "二十二点二十分",
+      "answer": "22:20",
+      "file": "gt-v1-times-1-3.mp3",
+      "sha256": "2dbc7dbfd1c8a7300c4decffd3549c9adc4d8534511b68df463a6b0f829b3bb1",
+      "duration": 2.376,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-4",
+      "text": "五点二十五分",
+      "answer": "5:25",
+      "file": "gt-v1-times-1-4.mp3",
+      "sha256": "fd98a36c70981ef06c5131313bff7cba8b5101d3b38d8fcda6172a2a3ad30f18",
+      "duration": 2.064,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-5",
+      "text": "十二点三十分",
+      "answer": "12:30",
+      "file": "gt-v1-times-1-5.mp3",
+      "sha256": "c3f7ed8c9371fdc6c3d8f7e88f65a0f0aa7c06c4fc15e4c96e5146dbad448ee9",
+      "duration": 2.28,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-6",
+      "text": "十九点三十五分",
+      "answer": "19:35",
+      "file": "gt-v1-times-1-6.mp3",
+      "sha256": "236486f28c8cadf67c70745e660841e79ed829f76b8468cb214e92cae599eba5",
+      "duration": 2.472,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-7",
+      "text": "两点四十分",
+      "answer": "2:40",
+      "file": "gt-v1-times-1-7.mp3",
+      "sha256": "728d5c1294cc715dcdf0fac7fdcc258d6ebf1512df18e8a6aa9c6b2e141deb1f",
+      "duration": 1.896,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-8",
+      "text": "九点四十五分",
+      "answer": "9:45",
+      "file": "gt-v1-times-1-8.mp3",
+      "sha256": "b2aed685556bbf24afdb7c78a49cdf528a25ee5f2f1502a95c3fa033aa5023a9",
+      "duration": 2.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-9",
+      "text": "十六点五十分",
+      "answer": "16:50",
+      "file": "gt-v1-times-1-9.mp3",
+      "sha256": "11962562711f7ae4ea3678ae68513a6578dba8461a65e86c13113ad5384bce23",
+      "duration": 2.208,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-10",
+      "text": "二十三点五十五分",
+      "answer": "23:55",
+      "file": "gt-v1-times-1-10.mp3",
+      "sha256": "2574faf324739509c56b2beb8d0e452eb31a778fb4ed794215dc72e6f11ccc65",
+      "duration": 2.568,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-1-11",
+      "text": "六点",
+      "answer": "6:00",
+      "file": "gt-v1-times-1-11.mp3",
+      "sha256": "4fb3a06b41c57d149a02b1e1222c92f4bdb84f633aaf90c07b74ef1bed2c74bf",
+      "duration": 1.128,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-0",
+      "text": "两点零一分",
+      "answer": "2:01",
+      "file": "gt-v1-times-2-0.mp3",
+      "sha256": "acf4038787624d03863a3ac12c2c1bfec550adc430255e9abddebb6e4f595b79",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-1",
+      "text": "九点零二分",
+      "answer": "9:02",
+      "file": "gt-v1-times-2-1.mp3",
+      "sha256": "d8045af9d2fb6c9735d5ed17cecc9c755cf888327547101ec98f987f5674f43a",
+      "duration": 1.776,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-2",
+      "text": "十六点零三分",
+      "answer": "16:03",
+      "file": "gt-v1-times-2-2.mp3",
+      "sha256": "df731b7192c4a7aaede2b9f1a1ac05e2d26d3984b97d1e54dcd66fe22dd53a7d",
+      "duration": 2.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-3",
+      "text": "二十三点零四分",
+      "answer": "23:04",
+      "file": "gt-v1-times-2-3.mp3",
+      "sha256": "599434cf3d32f56353523999dfb6f85e3860b1e4611ec65aee63a36d37cddbd5",
+      "duration": 2.4,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-4",
+      "text": "六点零六分",
+      "answer": "6:06",
+      "file": "gt-v1-times-2-4.mp3",
+      "sha256": "6204676eb0668aa61937214065e3dc6b6f6eda2d2a4a1677972b42469f73e24d",
+      "duration": 1.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-5",
+      "text": "十三点零七分",
+      "answer": "13:07",
+      "file": "gt-v1-times-2-5.mp3",
+      "sha256": "fdc53714582a2ea8be330398198ac893a01539762df9d644e3f682e719b6bebe",
+      "duration": 2.232,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-6",
+      "text": "二十点零八分",
+      "answer": "20:08",
+      "file": "gt-v1-times-2-6.mp3",
+      "sha256": "d0e4bcd3178c472079c6cbbb3dd0dcb3259ddd7a7df4255cd04ed187d3f397b9",
+      "duration": 2.136,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-7",
+      "text": "三点零九分",
+      "answer": "3:09",
+      "file": "gt-v1-times-2-7.mp3",
+      "sha256": "2b3ea476f1534a13f934e0496435cdb4421471d9ec32c544d412bd215dbb9c4a",
+      "duration": 1.992,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-8",
+      "text": "十点十一分",
+      "answer": "10:11",
+      "file": "gt-v1-times-2-8.mp3",
+      "sha256": "526bbfc10851497cbfbbd2f0aec6a12de660e6cd1b9267299ff6f4d4d36cdf88",
+      "duration": 2.016,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-9",
+      "text": "十七点二十一分",
+      "answer": "17:21",
+      "file": "gt-v1-times-2-9.mp3",
+      "sha256": "d8ad93bc21204f33a58962a4afb625261b4733c030c000059173e6c095779d0a",
+      "duration": 2.4,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-10",
+      "text": "零点四十一分",
+      "answer": "0:41",
+      "file": "gt-v1-times-2-10.mp3",
+      "sha256": "8666e922096df5610fc23e90613c7cfbcf49d945049c7040dd8295d098553ab1",
+      "duration": 2.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "times-2-11",
+      "text": "七点五十九分",
+      "answer": "7:59",
+      "file": "gt-v1-times-2-11.mp3",
+      "sha256": "21581a259c24a150e7faf1cbb036d843474142906cdbb62ea92640ff52a6fc0f",
+      "duration": 2.16,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-0",
+      "text": "幺，三，零，零，二，四，六，八，零，二，四",
+      "answer": "13002468024",
+      "file": "gt-v1-phones-0-0.mp3",
+      "sha256": "6e6ac203ef0d2b7c3b429701c9764c5659395d9c1b3c1ae199ee04b5de4ca904",
+      "duration": 10.776,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-1",
+      "text": "幺，三，五，三，五，七，九，幺，三，五，七",
+      "answer": "13535791357",
+      "file": "gt-v1-phones-0-1.mp3",
+      "sha256": "1b21780a71aa2aae0dac9e5b6f07dd3b2c1392dc904f28513bab4ee53dd6c945",
+      "duration": 11.064,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-2",
+      "text": "幺，四，零，六，八，零，二，四，六，八，零",
+      "answer": "14068024680",
+      "file": "gt-v1-phones-0-2.mp3",
+      "sha256": "80533b47e34bcc92c2df01503b0540cc5be82b4de02076d88e5d3e7adfd59b01",
+      "duration": 10.8,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-3",
+      "text": "幺，四，五，九，幺，三，五，七，九，幺，三",
+      "answer": "14591357913",
+      "file": "gt-v1-phones-0-3.mp3",
+      "sha256": "f224c918d28d8497cc8396477421a96a267dc76d2fc05e4663143aba6126f1bc",
+      "duration": 11.04,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-4",
+      "text": "幺，五，零，二，四，六，八，零，二，四，六",
+      "answer": "15024680246",
+      "file": "gt-v1-phones-0-4.mp3",
+      "sha256": "514d8c29ab545934c86b1b838b2546eb1c73dd742658ff239316a8cc9b027135",
+      "duration": 10.776,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-5",
+      "text": "幺，五，五，五，七，九，幺，三，五，七，九",
+      "answer": "15557913579",
+      "file": "gt-v1-phones-0-5.mp3",
+      "sha256": "6887e7c4707bd959b11e721c9c50f3a0e6a069c881b0e93c137c14eadbe74757",
+      "duration": 11.328,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-6",
+      "text": "幺，六，零，八，零，二，四，六，八，零，二",
+      "answer": "16080246802",
+      "file": "gt-v1-phones-0-6.mp3",
+      "sha256": "b1b39e101fda53ee15425a22e3737e4ad0e37912e306c96a0a7bfe9e1656355f",
+      "duration": 10.608,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-7",
+      "text": "幺，六，五，幺，三，五，七，九，幺，三，五",
+      "answer": "16513579135",
+      "file": "gt-v1-phones-0-7.mp3",
+      "sha256": "7c8fc9e8bd17deb4cd1605a75381b498db5bcad8b3d95c5c444e97436627478a",
+      "duration": 11.016,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-8",
+      "text": "幺，七，零，四，六，八，零，二，四，六，八",
+      "answer": "17046802468",
+      "file": "gt-v1-phones-0-8.mp3",
+      "sha256": "0be5c73c857fef49415c5f5f34ca6868be8787171af0f460d65b176a2f41f2b1",
+      "duration": 10.824,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-9",
+      "text": "幺，七，五，七，九，幺，三，五，七，九，幺",
+      "answer": "17579135791",
+      "file": "gt-v1-phones-0-9.mp3",
+      "sha256": "7392cfcd7646d15ca9029bab58fe37e65353cec461c7a9f50c0a7a11abb2b556",
+      "duration": 11.112,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-10",
+      "text": "幺，八，零，零，二，四，六，八，零，二，四",
+      "answer": "18002468024",
+      "file": "gt-v1-phones-0-10.mp3",
+      "sha256": "c55fcf5b936e9bac28632ab320eb0d1056884613a3256fb8f9ce36fbd98025a3",
+      "duration": 10.728,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-0-11",
+      "text": "幺，八，五，三，五，七，九，幺，三，五，七",
+      "answer": "18535791357",
+      "file": "gt-v1-phones-0-11.mp3",
+      "sha256": "a186d3907368651bf3bf833d929c708349ae130f86c46e8b18c37d084d0bac60",
+      "duration": 11.04,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-0",
+      "text": "幺，三，三，幺，四，七，零，三，六，九，二",
+      "answer": "13314703692",
+      "file": "gt-v1-phones-1-0.mp3",
+      "sha256": "7476b8b5794bb3103bb66b3b7b3d3ad635c9b685d3464d5120a6a22f397df67c",
+      "duration": 10.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-1",
+      "text": "幺，三，八，四，七，零，三，六，九，二，五",
+      "answer": "13847036925",
+      "file": "gt-v1-phones-1-1.mp3",
+      "sha256": "c405ba0b6a844e496bd21faa2ac875752c3ae9ce203cb56980de46fba2552e74",
+      "duration": 11.016,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-2",
+      "text": "幺，四，三，七，零，三，六，九，二，五，八",
+      "answer": "14370369258",
+      "file": "gt-v1-phones-1-2.mp3",
+      "sha256": "27ecf7907b96429dfc4bdfb99cd8eed359879116710d91e386e680903ed64cce",
+      "duration": 10.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-3",
+      "text": "幺，四，八，零，三，六，九，二，五，八，幺",
+      "answer": "14803692581",
+      "file": "gt-v1-phones-1-3.mp3",
+      "sha256": "ec8d422ab5024e58d3a867c5c76a2d8fb3940db6e680e0f07d62f498ff345d1c",
+      "duration": 10.848,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-4",
+      "text": "幺，五，三，三，六，九，二，五，八，幺，四",
+      "answer": "15336925814",
+      "file": "gt-v1-phones-1-4.mp3",
+      "sha256": "aee6b04a7ddfa20cfbff0166c7cb5e05a3565951d8caea13230fdf6f95d07db4",
+      "duration": 10.896,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-5",
+      "text": "幺，五，八，六，九，二，五，八，幺，四，七",
+      "answer": "15869258147",
+      "file": "gt-v1-phones-1-5.mp3",
+      "sha256": "d5f269a01417ea31f29bed01a7c1cbfc29babc096fd965f6ac7004c1b23f8765",
+      "duration": 10.872,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-6",
+      "text": "幺，六，三，九，二，五，八，幺，四，七，零",
+      "answer": "16392581470",
+      "file": "gt-v1-phones-1-6.mp3",
+      "sha256": "a15fbf419afdb42316bb279fa3a921808a6e6c9383b6a6506fd157581c96e472",
+      "duration": 10.896,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-7",
+      "text": "幺，六，八，二，五，八，幺，四，七，零，三",
+      "answer": "16825814703",
+      "file": "gt-v1-phones-1-7.mp3",
+      "sha256": "5e44062dca708c2092b9fbba25129d274be42b48d637de33102cbc1d42e72789",
+      "duration": 10.68,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-8",
+      "text": "幺，七，三，五，八，幺，四，七，零，三，六",
+      "answer": "17358147036",
+      "file": "gt-v1-phones-1-8.mp3",
+      "sha256": "3bec532cbfc065b24f86340b8a34e1b5d1bfc41992db391f9846afc2f1843e42",
+      "duration": 10.92,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-9",
+      "text": "幺，七，八，八，幺，四，七，零，三，六，九",
+      "answer": "17881470369",
+      "file": "gt-v1-phones-1-9.mp3",
+      "sha256": "02bc6252d3a158e2c040c099f28ba6855320be784cbce589d5034809d89d06d3",
+      "duration": 10.992,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-10",
+      "text": "幺，八，三，幺，四，七，零，三，六，九，二",
+      "answer": "18314703692",
+      "file": "gt-v1-phones-1-10.mp3",
+      "sha256": "9ade40c86ca52c36e64354315d0feb82953fe44fa3af40f888a20ec81af9d213",
+      "duration": 10.872,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-1-11",
+      "text": "幺，八，八，四，七，零，三，六，九，二，五",
+      "answer": "18847036925",
+      "file": "gt-v1-phones-1-11.mp3",
+      "sha256": "5136aab645cd0ac96ec7c041a24d672d8e299d3e56aa2079c18b9aa2dbe68b9f",
+      "duration": 10.968,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-0",
+      "text": "幺，三，六，二，六，零，四，八，二，六，零",
+      "answer": "13626048260",
+      "file": "gt-v1-phones-2-0.mp3",
+      "sha256": "83c65f2e5d1d494b82c03d8abb698d5f92fe185240d6d1deb6f6e9a92b39bc00",
+      "duration": 10.776,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-1",
+      "text": "幺，四，幺，五，九，三，七，幺，五，九，三",
+      "answer": "14159371593",
+      "file": "gt-v1-phones-2-1.mp3",
+      "sha256": "28d6b44fc878776477b633d694c41fc9bedf1de349ffb7b6195fa73345d0edc0",
+      "duration": 11.136,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-2",
+      "text": "幺，四，六，八，二，六，零，四，八，二，六",
+      "answer": "14682604826",
+      "file": "gt-v1-phones-2-2.mp3",
+      "sha256": "544e855e27285f7cb8026e71107a59449e6f10c46d73b74a7b8a646a18af48ee",
+      "duration": 10.632,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-3",
+      "text": "幺，五，幺，幺，五，九，三，七，幺，五，九",
+      "answer": "15115937159",
+      "file": "gt-v1-phones-2-3.mp3",
+      "sha256": "2f9e36b5981528fe8510c4603d65f08b0adf17a7ed7967de04c1014f0820e298",
+      "duration": 11.28,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-4",
+      "text": "幺，五，六，四，八，二，六，零，四，八，二",
+      "answer": "15648260482",
+      "file": "gt-v1-phones-2-4.mp3",
+      "sha256": "24930c7120c8c8e9f419af4d6f83274d5f0f134463c97b44bac4b14df588f16a",
+      "duration": 10.632,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-5",
+      "text": "幺，六，幺，七，幺，五，九，三，七，幺，五",
+      "answer": "16171593715",
+      "file": "gt-v1-phones-2-5.mp3",
+      "sha256": "82292acef9e1ef76fb56f5bb98334794495177fbd093ea36b5e17d08225ddbca",
+      "duration": 11.184,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-6",
+      "text": "幺，六，六，零，四，八，二，六，零，四，八",
+      "answer": "16604826048",
+      "file": "gt-v1-phones-2-6.mp3",
+      "sha256": "b11c2282cc520efb99a6b698aa042cebdcb99a2be4c0a095275f30f16da3532f",
+      "duration": 10.632,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-7",
+      "text": "幺，七，幺，三，七，幺，五，九，三，七，幺",
+      "answer": "17137159371",
+      "file": "gt-v1-phones-2-7.mp3",
+      "sha256": "b257e30e4587e497b9f08c6677304c32fabc4584f6ab1deeb1b70e4341334c7c",
+      "duration": 11.112,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-8",
+      "text": "幺，七，六，六，零，四，八，二，六，零，四",
+      "answer": "17660482604",
+      "file": "gt-v1-phones-2-8.mp3",
+      "sha256": "194cb6e467eb1f00813da3014c7dab2f0f2ea3e696eceb1438df4a07975b0d06",
+      "duration": 10.776,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-9",
+      "text": "幺，八，幺，九，三，七，幺，五，九，三，七",
+      "answer": "18193715937",
+      "file": "gt-v1-phones-2-9.mp3",
+      "sha256": "590f7500f23a582974488668e1fce3b9552a4b2fa3d189dba53e8f4a76d330b2",
+      "duration": 11.112,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-10",
+      "text": "幺，八，六，二，六，零，四，八，二，六，零",
+      "answer": "18626048260",
+      "file": "gt-v1-phones-2-10.mp3",
+      "sha256": "2bf4133f81761362c90f87904644300ff7decf4c712f42e0b440665050354257",
+      "duration": 10.728,
+      "sample_rate": 24000
+    },
+    {
+      "id": "phones-2-11",
+      "text": "幺，九，幺，五，九，三，七，幺，五，九，三",
+      "answer": "19159371593",
+      "file": "gt-v1-phones-2-11.mp3",
+      "sha256": "bd46905e60f2db7f195ca291ac9bfe4d022a14ad5107d38e243d95a35affd915",
+      "duration": 11.256,
+      "sample_rate": 24000
+    }
+  ]
+}
