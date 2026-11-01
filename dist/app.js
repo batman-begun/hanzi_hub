@@ -1,5 +1,6 @@
-import { audioSource, NORMAL_RATE, SLOW_RATE } from "./audio-config.js";
-import { deck, normalize } from "./engine.js";
+import { audioSource, NORMAL_RATE, SLOW_RATE } from "./audio-config.js?v=0.6";
+import { allDeck as deck } from "./deck-v06.js?v=0.6";
+import { grade } from "./grader.js?v=0.6";
 const $ = (s) => document.querySelector(s);
 let mode = "numbers",
   level = 0,
@@ -11,9 +12,12 @@ let mode = "numbers",
   correct = 0,
   replays = 0,
   review = false,
+  composing = false,
   audio = $("#clip"),
   playToken = 0;
 let stats = { answered: 0, correct: 0, sessions: 0 };
+let detail = {};
+try { const saved = JSON.parse(localStorage.getItem("shu-detail-v1")); if (saved && typeof saved === "object" && !Array.isArray(saved)) detail = saved; } catch {}
 try {
   const saved = JSON.parse(localStorage.getItem("shu-progress-v1"));
   if (
@@ -71,6 +75,29 @@ const inputHints = {
   times: ["e.g. 14:05", "Use 24-hour time, e.g. 14:05.", "text"],
   phones: ["11 digits", "Spaces are fine. Enter all 11 digits.", "tel"],
 };
+const text = (vi, en) => $("#language").value === "vi" ? vi : en;
+const newHints = {
+  numbers: ["100,000–99,999,999 · 万", "100,000,000–9,999,999,999 · 亿"],
+  prices: ["Larger amounts · yuan and fen", "Large amounts · yuan and fen"],
+  times: ["Quarter and half hours · 24-hour clock", "Quarter and half hours · 24-hour clock"],
+  phones: ["11 digits · repeated digits", "11 digits · zeros and repetition"],
+  builder: ["0–99", "100–2,026", "10,000–99,999", "100,000–99,999,999", "100,000,000–9,999,999,999"]
+};
+for (const key of ['numbers','prices','times','phones']) hints[key].push(...newHints[key]);
+hints.builder = newHints.builder;
+inputHints.builder = ['e.g. 一百零五', 'Write simplified Chinese numerals, e.g. 一百零五.', 'text'];
+function renderInputHint() {
+  const hint = {
+    numbers: text("Nhập số, ví dụ 18.235.000 hoặc 18235000; dấu phẩy hoặc khoảng trắng cũng được.", "Enter digits, e.g. 18,235,000 or 18235000; spaces are also accepted."),
+    prices: text("Nhập RMB, ví dụ ¥1,250.50; dấu chấm là phần lẻ, dấu phẩy ngăn hàng nghìn.", "Enter RMB, e.g. ¥1,250.50; period for decimals and commas for thousands."),
+    times: text("Nhập giờ 24 tiếng, ví dụ 14:05.", "Enter 24-hour time, e.g. 14:05."),
+    phones: text("Nhập đủ 11 chữ số; có thể dùng khoảng trắng, gạch nối hoặc ngoặc.", "Enter all 11 digits; spaces, hyphens and parentheses are accepted."),
+    builder: text("Viết chữ Hán giản thể, ví dụ 一千零五; thêm 零 khi cần.", "Write simplified Chinese numerals, e.g. 一千零五; include required 零.")
+  };
+  $("#input-hint").dataset.noTranslate = "";
+  $("#input-hint").textContent = hint[mode];
+  $("#answer").placeholder = ({numbers:text("Ví dụ: 18235000", "e.g. 18235000"), prices:"¥1,250.50", times:"14:05", phones:"138 0012 3456", builder:text("Ví dụ: 一百零五", "e.g. 一百零五")})[mode];
+}
 function shuffle(a) {
   a = [...a];
   for (let i = a.length - 1; i > 0; i--) {
@@ -87,11 +114,15 @@ function stop() {
 }
 function reset() {
   stop();
-  round = shuffle(
-    deck.filter((q) => q.mode === mode && q.level === level),
-  ).slice(0, 10);
+  const candidates = shuffle(deck.filter((q) => q.mode === mode && q.level === level));
+  let history = {};
+  try { history = JSON.parse(localStorage.getItem("shu-history-v1")) || {}; } catch {}
+  const bucket = `${mode}-${level}`, seen = new Set(history[bucket] || []);
+  round = [...candidates.filter(q => !seen.has(q.id)), ...candidates.filter(q => seen.has(q.id))].slice(0, 10);
+  history[bucket] = round.map(q => q.id);
+  try { localStorage.setItem("shu-history-v1", JSON.stringify(history)); } catch {}
   index = 0;
-  started = false;
+  started = mode === "builder";
   checked = false;
   misses = [];
   correct = 0;
@@ -99,7 +130,7 @@ function reset() {
   review = false;
   $("#results").hidden = true;
   $("#practice").hidden = false;
-  $("#session-label").textContent = "THE LISTENING ROOM";
+  $("#session-label").textContent = mode === "builder" ? text("LUYỆN VIẾT CHỮ HÁN", "HANZI BUILDER") : "THE LISTENING ROOM";
   $("#level-note").textContent = hints[mode][level];
   renderQuestion();
 }
@@ -107,23 +138,25 @@ function renderQuestion() {
   stop();
   checked = false;
   $("#category").textContent =
-    mode.toUpperCase() + " / " + ["WARM-UP", "EVERYDAY", "CHALLENGE"][level];
+    mode.toUpperCase() + " / " + ["WARM-UP", "EVERYDAY", "CHALLENGE", "EXPERT", "MASTER"][level];
   $("#counter").textContent = started
     ? `${index + 1} / ${round.length}${review ? " · review" : ""}`
     : "10 questions · no rush";
   $("#progress").style.width = `${(index / round.length) * 100}%`;
-  $("#prompt").innerHTML = started
+  $("#play").hidden = mode === "builder";
+  $("#slow").hidden = mode === "builder";
+  $("#prompt").innerHTML = mode === "builder" ? round[index].display : started
     ? "Listen. Catch it."
     : "A little listening.<br>A lot less freezing.";
-  $("#audio-status").textContent = started
+  $("#audio-status").textContent = mode === "builder" ? text("Viết số này bằng chữ Hán giản thể.", "Write this number in simplified Chinese.") : started
     ? "Tap play when you’re ready."
     : "Tap play to begin your 10-question workout.";
   $("#answer").value = "";
   $("#answer").disabled = !started;
   $("#check").disabled = !started;
-  $("#answer").placeholder = inputHints[mode][0];
-  $("#answer").inputMode = inputHints[mode][2];
-  $("#input-hint").textContent = inputHints[mode][1];
+  $("#answer-form label").textContent = mode === "builder" ? text("VIẾT BẰNG CHỮ HÁN", "WRITE IN HANZI") : "WHAT DID YOU HEAR?";
+  $("#answer").inputMode = "text";
+  renderInputHint();
   $("#feedback").hidden = true;
   $("#next-row").hidden = true;
   $("#next").innerHTML =
@@ -170,24 +203,40 @@ async function play(slow = false) {
 }
 $("#play").onclick = () => play();
 $("#slow").onclick = () => play(true);
+document.addEventListener("shu-language-changed", () => {
+  renderInputHint();
+  if (mode === "builder") {
+    $("#session-label").textContent = text("LUYỆN VIẾT CHỮ HÁN", "HANZI BUILDER");
+    $("#answer-form label").textContent = text("VIẾT BẰNG CHỮ HÁN", "WRITE IN HANZI");
+    $("#audio-status").textContent = checked ? text("Đối chiếu cách viết bên dưới.", "Compare the written form below.") : text("Viết số này bằng chữ Hán giản thể.", "Write this number in simplified Chinese.");
+  }
+});
+$("#answer").addEventListener("compositionstart", () => composing = true);
+$("#answer").addEventListener("compositionend", () => composing = false);
+$("#answer").addEventListener("keydown", e => { if (e.key === "Enter" && (e.isComposing || composing || e.keyCode === 229)) e.preventDefault(); });
 $("#answer-form").onsubmit = (e) => {
   e.preventDefault();
   if (!started || checked) return;
+  if (composing) return;
   let q = round[index],
-    value = normalize(mode, $("#answer").value);
-  if (value === null) {
-    $("#input-hint").textContent = "Check the format. " + inputHints[mode][1];
+    result = grade(q, $("#answer").value, $("#language").value);
+  if (result.status === "INVALID_FORMAT" || result.status === "AMBIGUOUS_UNSUPPORTED") {
+    $("#input-hint").textContent = result.diagnostic === "wrong_currency" ? text("Bài này dùng nhân dân tệ (¥), không dùng ký hiệu tiền tệ khác.", "Use RMB (¥), not another currency symbol.") : text("Định dạng chưa hợp lệ. Hãy sửa rồi thử lại.", "Invalid or unsupported format. Please revise and retry.");
     $("#answer").focus();
     return;
   }
   stop();
   checked = true;
-  const ok = value === q.answer;
+  const ok = result.isCorrect;
   if (ok) correct++;
   else misses.push(q);
   if (!review) {
     stats.answered++;
     if (ok) stats.correct++;
+    const key = `${mode}-${level}`, old = detail[key];
+    const entry = old && Number.isSafeInteger(old.answered) && Number.isSafeInteger(old.correct) && old.answered >= old.correct && old.correct >= 0 ? old : {answered:0,correct:0};
+    entry.answered++; if(ok) entry.correct++; detail[key] = entry;
+    try { localStorage.setItem("shu-detail-v1", JSON.stringify(detail)); } catch {}
     save();
   }
   $("#answer").disabled = true;
@@ -198,7 +247,7 @@ $("#answer-form").onsubmit = (e) => {
   let strong = document.createElement("strong");
   strong.textContent = ok
     ? "Caught it. ✓"
-    : `Nearly. The answer is ${q.display}.`;
+    : `Not quite. The answer is ${mode === "builder" ? q.spoken : q.display}.`;
   let hanzi = document.createElement("span");
   hanzi.className = "hanzi";
   hanzi.lang = "zh-CN";
@@ -207,11 +256,11 @@ $("#answer-form").onsubmit = (e) => {
   reading.className = "reading";
   reading.textContent = q.pinyin;
   let tip = document.createElement("p");
-  tip.textContent = q.tip;
+  tip.textContent = mode === "builder" ? text("Chú ý nhóm vạn, ức và chữ 零 nối các hàng khuyết.", "Count in groups of 万 and 亿; use 零 for gaps.") : q.tip;
+  if (result.status === "CORRECT_ACCEPTED_VARIANT") tip.textContent = text("Cách viết khác hợp lệ. ", "Valid alternative. ") + tip.textContent;
   box.append(strong, hanzi, reading, tip);
   box.hidden = false;
-  $("#audio-status").textContent =
-    "Replay to connect the sound to the pattern.";
+  $("#audio-status").textContent = mode === "builder" ? text("Đối chiếu cách viết bên dưới.", "Compare the written form below.") : "Replay to connect the sound to the pattern.";
   $("#next-row").hidden = false;
   $("#next").focus({ preventScroll: true });
 };
@@ -246,7 +295,7 @@ function finish() {
       index = 0;
       correct = 0;
       review = true;
-      $("#session-label").textContent = "THE SECOND LISTEN";
+      $("#session-label").textContent = mode === "builder" ? text("ÔN LẠI CÂU SAI", "REVIEW MISSED QUESTIONS") : "THE SECOND LISTEN";
       $("#results").hidden = true;
       $("#practice").hidden = false;
       renderQuestion();
@@ -299,9 +348,27 @@ $("#privacy").onclick = () => {
   $("#privacy-heading").scrollIntoView({ block: "start" });
 };
 $("#erase").onclick = () => {
+  if (!confirm(text("Xóa toàn bộ tiến độ trên thiết bị này? Ngôn ngữ được giữ lại.", "Clear all progress on this device? Language is retained."))) return;
   stats = { answered: 0, correct: 0, sessions: 0 };
+  try { localStorage.removeItem("shu-history-v1"); localStorage.removeItem("shu-detail-v1"); detail = {}; } catch {}
   save();
   $("#erase").textContent = "Saved progress cleared ✓";
+};
+const menu = $("#menu"), menuToggle = $("#menu-toggle");
+function closeMenu() { menu.hidden = true; menuToggle.setAttribute("aria-expanded", "false"); }
+menuToggle.onclick = () => { menu.hidden = !menu.hidden; menuToggle.setAttribute("aria-expanded", String(!menu.hidden)); if (!menu.hidden) menu.querySelector("button").focus(); };
+document.addEventListener("keydown", e => { if (e.key === "Escape" && !menu.hidden) { closeMenu(); menuToggle.focus(); } });
+document.addEventListener("click", e => { if (!e.target.closest(".menu-wrap")) closeMenu(); });
+$("#guide-open").addEventListener("click", closeMenu);
+$("#info-close").onclick = () => $("#info-dialog").close();
+for (const button of document.querySelectorAll('[data-info]')) button.onclick = () => {
+ closeMenu(); const kind=button.dataset.info, vi=$("#language").value==='vi';
+ const content = {
+ changes: vi ? 'v0.6 — 5 cấp, viết chữ Hán và chấm đáp án mới; mỗi nhóm có 12 câu nên sẽ gặp lại. v0.5 (31/10/2026) — giao diện tiếng Việt và âm thanh tạo sẵn.' : 'v0.6 — five levels, Hanzi Builder and updated grading; each group has 12 questions, so repetition occurs. v0.5 (2026-10-31) — Vietnamese interface and prepared audio.',
+ audio: vi ? 'Giọng Google Translate được tạo sẵn, tốc độ thường 1.0 và chậm 0.8. Đây là giọng tổng hợp, không phải bản thu người bản xứ.' : 'Prepared Google Translate synthetic voice; normal 1.0 and slow 0.8. This is not a native speaker recording.',
+ progress: vi ? `Đã làm ${stats.answered} câu · đúng ${stats.correct} · ${stats.sessions} bài. Đây là kết quả luyện tập, không phải đánh giá trình độ.` : `${stats.answered} attempts · ${stats.correct} correct · ${stats.sessions} workouts. Practice accuracy is not proficiency.`,
+ about: vi ? 'SHÙ — Mandarin Number Gym. Tiến độ chỉ lưu trên thiết bị; không tài khoản, ghi âm hay theo dõi. Xóa tiến độ trong Hướng dẫn.' : 'SHÙ — Mandarin Number Gym. Progress stays on this device; no account, recording or tracking. Clear progress in Help.'
+ }; if (kind === 'progress') { const rows=Object.entries(detail).filter(([,x])=>x && Number.isSafeInteger(x.answered) && x.answered>0 && Number.isSafeInteger(x.correct)).map(([k,x])=>`${k}: ${x.correct}/${x.answered}`); content.progress += rows.length ? "\n" + rows.join(" · ") : ""; } $("#info-content").style.whiteSpace='pre-line'; $("#info-content").textContent=content[kind]; $("#info-dialog").showModal();
 };
 document.addEventListener("visibilitychange", () => {
   if (document.hidden) stop();

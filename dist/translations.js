@@ -1,4 +1,26 @@
 export const vi = {
+  "Help": "Hướng dẫn",
+  "Changelog": "Nhật ký cập nhật",
+  "Audio & Pronunciation": "Âm thanh và phát âm",
+  "Learning Progress": "Tiến độ luyện tập",
+  "About & Privacy": "Giới thiệu và quyền riêng tư",
+  "Hanzi Builder": "Viết chữ Hán",
+  "Write the number in Chinese": "Viết số bằng chữ Hán",
+  "Expert": "Nâng cao",
+  "100,000–99,999,999 · 万": "100.000–99.999.999 · nhóm 万",
+  "100,000,000–9,999,999,999 · 亿": "100.000.000–9.999.999.999 · nhóm 亿",
+  "Larger amounts · yuan and fen": "Số tiền lớn · nguyên và phân",
+  "Large amounts · yuan and fen": "Số tiền rất lớn · nguyên và phân",
+  "Quarter and half hours · 24-hour clock": "Giờ 24 tiếng · mốc 15 và 30 phút",
+  "11 digits · repeated digits": "11 chữ số · các số lặp lại",
+  "11 digits · zeros and repetition": "11 chữ số · số không và số lặp",
+  "Master": "Bậc thầy",
+  "Count in groups of 万 and 亿; 零 bridges missing places.": "Đếm theo nhóm 万 và 亿; 零 nối các hàng bị khuyết.",
+  "元 = yuan · 角 = 0.10 yuan · 分 = 0.01 yuan.": "元 = nguyên · 角 = 0,10 nguyên · 分 = 0,01 nguyên.",
+  "24-hour clock; 一刻 means 15 minutes and 半 means 30 minutes.": "Giờ 24 tiếng; 一刻 là 15 phút, 半 là 30 phút.",
+  "Phone numbers are read digit by digit. 幺 means 1.": "Số điện thoại đọc từng chữ số; 幺 là số 1.",
+  "Write the displayed number in simplified Chinese. 二 and 两 are accepted in supported positions. Unclear or malformed input is not scored.": "Viết số hiển thị bằng chữ Hán giản thể. 二 và 两 được chấp nhận ở vị trí phù hợp. Cách nhập không rõ hoặc sai cấu trúc không bị tính điểm.",
+  "240 prepared listening questions and 60 Hanzi Builder prompts across five levels. Each session draws ten questions from the selected set of twelve. Audio: Google Translate speech, prepared ahead of time via gTTS.": "240 câu nghe có âm thanh và 60 câu viết chữ Hán, chia thành 5 cấp. Mỗi lượt chọn 10 trong 12 câu. Giọng Google Translate được tạo sẵn qua gTTS.",
   "MANDARIN NUMBER GYM": "LUYỆN NGHE SỐ TIẾNG TRUNG",
   "Field notes": "Hướng dẫn",
   "SMALL REPS. REAL-WORLD CONFIDENCE.": "LUYỆN MỖI NGÀY. TỰ TIN NGOÀI ĐỜI.",
@@ -159,7 +181,7 @@ export function translate(text, language) {
     return `${m[1]} câu đã làm · ${m[2]} bài đã luyện`;
   if ((m = key.match(/^(\d+)% accuracy · saved on this device$/)))
     return `${m[1]}% đúng · lưu trên thiết bị này`;
-  if ((m = key.match(/^Nearly\. The answer is (.+)\.$/)))
+  if ((m = key.match(/^Not quite\. The answer is (.+)\.$/)))
     return `Chưa đúng rồi. Đáp án là ${m[1]}.`;
   if ((m = key.match(/^Practice (\d+) missed questions? →$/)))
     return `Ôn lại ${m[1]} câu chưa đúng →`;

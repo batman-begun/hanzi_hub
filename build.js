@@ -16,8 +16,8 @@ for (const [path, base64] of Object.entries(assets)) {
   mkdirSync(dirname(target.pathname), { recursive: true });
   writeFileSync(target, Buffer.from(base64, "base64"));
 }
-if (Object.keys(assets).length !== 151)
+if (Object.keys(assets).length !== 247)
   throw new Error("Incomplete prepared assets");
 console.log(
-  "SHÙ ready: 144 practice clips, 1 approved voice reference and 6 font files/notices restored to dist/.",
+  "SHÙ ready: 240 practice clips, 1 approved voice reference and 6 font files/notices restored to dist/.",
 );

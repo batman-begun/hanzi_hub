@@ -1,4 +1,4 @@
-import { translate } from "./translations.js";
+import { translate } from "./translations.js?v=0.6";
 // Keep canonical English per node so switching languages preserves live form,
 // audio, feedback and focus state. Observe only changed DOM subtrees.
 let language = "vi";
@@ -85,6 +85,7 @@ function apply() {
       : "Free Mandarin listening workouts for numbers, prices, times and phone numbers. No account needed.";
   document.querySelector('meta[name="description"]').content = description;
   observe();
+  document.dispatchEvent(new Event("shu-language-changed"));
 }
 selector.addEventListener("change", () => {
   language = selector.value;

@@ -15,7 +15,7 @@
     />
     <title>SHÙ 数字 — Mandarin Number Gym</title>
     <link rel="icon" href="icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=0.6" />
   </head>
   <body>
     <header>
@@ -28,9 +28,7 @@
           <option value="vi">Tiếng Việt</option>
           <option value="en">English</option>
         </select></label
-      ><button id="guide-open" class="text-button">
-        Field notes <span>↗</span>
-      </button>
+      ><div class="menu-wrap"><button id="menu-toggle" class="text-button" aria-label="Menu" aria-expanded="false" aria-controls="menu">☰</button><nav id="menu" hidden><button id="guide-open">Help</button><button data-info="changes">Changelog</button><button data-info="audio">Audio & Pronunciation</button><button data-info="progress">Learning Progress</button><button data-info="about">About &amp; Privacy</button></nav></div>
     </header>
     <main>
       <section class="intro">
@@ -74,13 +72,13 @@
                 ><small>Catch every single digit</small></span
               ><span class="arrow">↗</span>
             </button>
-          </div>
+          <button data-mode="builder" class="mode" aria-pressed="false"><span class="mode-icon">字</span><span><strong>Hanzi Builder</strong><small>Write the number in Chinese</small></span><span class="arrow">↗</span></button></div>
           <div class="section-label difficulty-label">02 / SET YOUR PACE</div>
           <div class="levels" role="group" aria-label="Difficulty">
             <button data-level="0" class="selected" aria-pressed="true">
               Warm-up</button
             ><button data-level="1" aria-pressed="false">Everyday</button
-            ><button data-level="2" aria-pressed="false">Challenge</button>
+            ><button data-level="2" aria-pressed="false">Challenge</button><button data-level="3" aria-pressed="false">Expert</button><button data-level="4" aria-pressed="false">Master</button>
           </div>
           <p class="level-note" id="level-note">
             0–99 · Get your ears warmed up.
@@ -128,7 +126,7 @@
                 <input
                   id="answer"
                   autocomplete="off"
-                  inputmode="numeric"
+                  type="text" inputmode="text"
                   placeholder="Type the number"
                   aria-describedby="input-hint"
                   disabled
@@ -173,7 +171,7 @@
     </main>
     <footer>
       <span
-        >SHÙ 数字 <span class="release-tag" data-no-translate>MVP v0.5</span>
+        >SHÙ 数字 <span class="release-tag" data-no-translate>v0.6 preview</span>
         <span class="muted">/ A little better, every rep.</span></span
       ><span
         >Built for curious ears.
@@ -201,6 +199,7 @@
         <dd>一百零五 = 105. The zero tells you a place is missing.</dd>
         <dt>万 · wàn / ten thousand</dt>
         <dd>一万 = 10,000. 三万 = 30,000.</dd>
+        <dt>亿 · yì / one hundred million</dt><dd>十亿二千六百万 = 1,026,000,000.</dd><dt>Hanzi Builder</dt><dd>Write the displayed number in simplified Chinese. 二 and 两 are accepted in supported positions. Unclear or malformed input is not scored.</dd>
         <dt>元 · 角 · 分 / money</dt>
         <dd>三元五角 = ¥3.50. 三元零五分 = ¥3.05.</dd>
         <dt>两点 · liǎng diǎn / two o’clock</dt>
@@ -222,14 +221,15 @@
         removes your progress. You can also clear it below.
       </p>
       <p class="muted">
-        144 prepared audio questions across four workouts and three levels. Each
+        240 prepared listening questions and 60 Hanzi Builder prompts across five levels. Each
         session draws ten questions from the selected set of twelve. Audio:
         Google Translate speech, prepared ahead of time via gTTS.
         <a href="audio-notice.txt">Audio credits ↗</a>
       </p>
       <button id="erase" class="text-button">Clear saved progress</button>
     </dialog>
-    <script type="module" src="app.js?v=mvp-0.5"></script>
-    <script type="module" src="locale.js?v=mvp-0.5"></script>
+    <dialog id="info-dialog"><button id="info-close" aria-label="Close">×</button><div id="info-content"></div></dialog>
+    <script type="module" src="app.js?v=0.6-qa2"></script>
+    <script type="module" src="locale.js?v=0.6-qa2"></script>
   </body>
 </html>

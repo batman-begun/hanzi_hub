@@ -927,3 +927,4 @@ html[lang="vi"] .mode small {
   margin-left: 6px;
   white-space: nowrap;
 }
+.menu-wrap {position:relative} #menu {position:absolute;right:0;top:100%;z-index:10;min-width:230px;padding:8px;background:#fff;border:1px solid #d8dccf;border-radius:12px;box-shadow:0 8px 24px #0002} #menu[hidden] {display:none} #menu button {display:block;width:100%;padding:10px;text-align:left;background:transparent;border:0;cursor:pointer} #menu button:hover,#menu button:focus {background:#eef1e7} #info-dialog {max-width:540px;padding:30px;border:0;border-radius:16px;line-height:1.6} #info-close {float:right} .levels {flex-wrap:wrap} [hidden] {display:none!important}
