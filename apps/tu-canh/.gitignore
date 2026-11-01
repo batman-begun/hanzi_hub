@@ -1,0 +1,4 @@
+content/*.jpg
+content/*.otf
+__pycache__/
+*.pyc

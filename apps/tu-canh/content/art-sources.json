@@ -1,0 +1,82 @@
+[
+  {
+    "id": 54677,
+    "title": "Lake and Mountains",
+    "artist": "Hashimoto Gahō",
+    "source": "https://www.metmuseum.org/art/collection/search/54677",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP211835.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-54677.jpg"
+  },
+  {
+    "id": 54701,
+    "title": "Lake and Causeway",
+    "artist": "Hashimoto Gahō",
+    "source": "https://www.metmuseum.org/art/collection/search/54701",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP211847.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-54701.jpg"
+  },
+  {
+    "id": 72711,
+    "title": "Blossoming Plum",
+    "artist": "Tang Yifen",
+    "source": "https://www.metmuseum.org/art/collection/search/72711",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP164323.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-72711.jpg"
+  },
+  {
+    "id": 54114,
+    "title": "Women Preparing Tea Around the Fire-Holder",
+    "artist": "Katsushika Hokusai",
+    "source": "https://www.metmuseum.org/art/collection/search/54114",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP138989.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-54114.jpg"
+  },
+  {
+    "id": 56070,
+    "title": "Group of Young Women on the Veranda of a Tea House",
+    "artist": "Katsukawa Shunchō",
+    "source": "https://www.metmuseum.org/art/collection/search/56070",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP130276.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-56070.jpg"
+  },
+  {
+    "id": 37325,
+    "title": "Kitchen Scene",
+    "artist": "Kitagawa Utamaro",
+    "source": "https://www.metmuseum.org/art/collection/search/37325",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP144599.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-37325.jpg"
+  },
+  {
+    "id": 56385,
+    "title": "The Lake at Hakone in Sagami Province (Sōshū Hakone kosui), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "artist": "Katsushika Hokusai",
+    "source": "https://www.metmuseum.org/art/collection/search/56385",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP141075.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-56385.jpg"
+  },
+  {
+    "id": 56240,
+    "title": "Lake Suwa in Shinano Province (Shinshū Suwako), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)",
+    "artist": "Katsushika Hokusai",
+    "source": "https://www.metmuseum.org/art/collection/search/56240",
+    "image": "https://images.metmuseum.org/CRDImages/as/original/DP141058.jpg",
+    "license": "Public Domain / Met Open Access",
+    "checked_at": "2026-11-01",
+    "file": "content/met-56240.jpg"
+  }
+]

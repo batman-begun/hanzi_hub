@@ -1,0 +1,287 @@
+[
+  {
+    "path": "dist/app.js",
+    "bytes": 4688,
+    "sha256": "c8b83bd3151d1288406e7e5d4f8b647624b7bca783b0e82ac0c7fff3b6f67a33"
+  },
+  {
+    "path": "dist/assets/lake.jpg",
+    "bytes": 212044,
+    "sha256": "4a5b25f27255fafa544c3dafe46948f073e4fdc44691e44c9c239f0fd1079fd8"
+  },
+  {
+    "path": "dist/assets/miracle-of-flight.mp3",
+    "bytes": 8475381,
+    "sha256": "b5f9b2e110ccfb52c7dd0c810d06ac2cbbfefb85262afa8bad56f068959f56e0"
+  },
+  {
+    "path": "dist/assets/scene-37325.webp",
+    "bytes": 459894,
+    "sha256": "a4c90e0b2ad65b1a5421300566d04fd74b5143a68e80cbedb2874dd3c323bce9"
+  },
+  {
+    "path": "dist/assets/scene-54114.webp",
+    "bytes": 582820,
+    "sha256": "851fe2b4b424ed832c5de1555b21d9d3fb2daa7755a21cab50fde0eb3bdf9b93"
+  },
+  {
+    "path": "dist/assets/scene-54677.webp",
+    "bytes": 443914,
+    "sha256": "fa41802b86734cb8b1a9556e5db61cc64ddfe3e8ff48dd1d092bf7127df38f2a"
+  },
+  {
+    "path": "dist/assets/scene-54701.webp",
+    "bytes": 485248,
+    "sha256": "3b2fed8fcc039e23a2125e4b65870d04d4b3066d155a2a067ff75034c1f59321"
+  },
+  {
+    "path": "dist/assets/scene-56070.webp",
+    "bytes": 552240,
+    "sha256": "c69eff181d24a6cec670035a7fb4dd61ccb8405d3c2e758f8bdab1e9aa838c81"
+  },
+  {
+    "path": "dist/assets/scene-56240.webp",
+    "bytes": 296504,
+    "sha256": "1a16b52a1dc7bddc413c52b94ca667e4d2c06aa714b89848aa495e9947447b25"
+  },
+  {
+    "path": "dist/assets/scene-56385.webp",
+    "bytes": 215836,
+    "sha256": "16da55ba43471ddb719c17cacf2bc0551a3ed32576e8dbeaedb4d50f9093790e"
+  },
+  {
+    "path": "dist/assets/scene-72711.webp",
+    "bytes": 163734,
+    "sha256": "7ea94b0e3732efbbd39ee82ca1d76299ad91a1927046e614869b2c2deae96a75"
+  },
+  {
+    "path": "dist/assets/tc-001.webp",
+    "bytes": 283758,
+    "sha256": "8ebb1a1d105ff4c297c9bbc1408e0f79dce5b856df7b3a729659e5c38b70a15a"
+  },
+  {
+    "path": "dist/assets/tc-002.webp",
+    "bytes": 107260,
+    "sha256": "9870f381402a4fe81c2d734a0356af220e1fcb483071602ba34e0640ab332336"
+  },
+  {
+    "path": "dist/assets/tc-003.webp",
+    "bytes": 288568,
+    "sha256": "04039bfa8ac4892a1e82794894ab76e3ef01b8e86b5faf00bcb994075e9131cc"
+  },
+  {
+    "path": "dist/assets/tc-004.webp",
+    "bytes": 288894,
+    "sha256": "6824e032cea0d6aeeb566b0d210985ead101ce9d5ffa8758848ac31192df0c63"
+  },
+  {
+    "path": "dist/assets/tc-005.webp",
+    "bytes": 145270,
+    "sha256": "01817e4e718d6bf2660ea4f4c32c3e4443896a053a2ec9264af2d5225e353f17"
+  },
+  {
+    "path": "dist/assets/tc-006.webp",
+    "bytes": 293586,
+    "sha256": "7b3301b091b21cbd13bc9546720a779eb26870856dc1863c613378ad61fece76"
+  },
+  {
+    "path": "dist/assets/tc-007.webp",
+    "bytes": 378000,
+    "sha256": "d600b4be2b6a9a6362864c1ffd74248799168029a05fa7cd3331aef188b53570"
+  },
+  {
+    "path": "dist/assets/tc-008.webp",
+    "bytes": 381084,
+    "sha256": "df193bace7007ebc57388022db1db7ca90c2c2dd37e1cb2d08784c28836e166d"
+  },
+  {
+    "path": "dist/assets/tc-009.webp",
+    "bytes": 147014,
+    "sha256": "cd4f05541d98e6d02c4c6b0df201fd755f444782da804c662bb6fb1541f69953"
+  },
+  {
+    "path": "dist/assets/tc-010.webp",
+    "bytes": 288446,
+    "sha256": "eaf619222830700aede1dedc4885cc0a5ca7c4a81b36ecafdb2e7957543e782a"
+  },
+  {
+    "path": "dist/assets/tc-011.webp",
+    "bytes": 292726,
+    "sha256": "8ec367ddb7b063bc15b1b5381ca9a9bbcb248d16e51126030ead140a982e490f"
+  },
+  {
+    "path": "dist/assets/tc-012.webp",
+    "bytes": 294226,
+    "sha256": "c63858607e622ecea8f8b74fd1d4444c4b7c8018ac34dc19ab9e4b06fe49afb2"
+  },
+  {
+    "path": "dist/assets/tc-013.webp",
+    "bytes": 196636,
+    "sha256": "ac5755d8b1c77830215c43876676ada9e3906899b48a7f2a1673202db2a070ca"
+  },
+  {
+    "path": "dist/assets/tc-014.webp",
+    "bytes": 111754,
+    "sha256": "5cf6e5f1e83bb7cacf793621ae4206eafa37e86975e78c07563e66fc6f786a88"
+  },
+  {
+    "path": "dist/assets/tc-015.webp",
+    "bytes": 381132,
+    "sha256": "0240b4ab4e6cce962a7f3d7e18da7bb590165a4b8f64618316ceeb4790420cdd"
+  },
+  {
+    "path": "dist/assets/tc-016.webp",
+    "bytes": 151186,
+    "sha256": "d55f079da614da90c1ac1978980877fcea7908c4c5b29a0fb9a9fdfc61bb55e7"
+  },
+  {
+    "path": "dist/assets/tc-017.webp",
+    "bytes": 282406,
+    "sha256": "4bd678ad33d9f175b831567dda661fd775307671ac7058f4a26da388d1c0627f"
+  },
+  {
+    "path": "dist/assets/tc-018.webp",
+    "bytes": 300044,
+    "sha256": "3362cf2d1bdeed6679a972c228aadb32be30416bd9360964ed30ec11b1bede50"
+  },
+  {
+    "path": "dist/assets/tc-019.webp",
+    "bytes": 381048,
+    "sha256": "958df613d31e7d83d67f13312155b6b526e34b28bdfca92ee691f11d896bee2c"
+  },
+  {
+    "path": "dist/assets/tc-020.webp",
+    "bytes": 117510,
+    "sha256": "2959c595af92f8f0debf530cd175e3235f052d85af4587085d40063469d250d3"
+  },
+  {
+    "path": "dist/assets/watermark-a.png",
+    "bytes": 8244,
+    "sha256": "51e0b7bf823efc04cf270ae073b913aedee850f7d43be3be3985524b039f05ba"
+  },
+  {
+    "path": "dist/audio-director.mjs",
+    "bytes": 1820,
+    "sha256": "a6b48d2888bf395970ac4c1695676e4fb38988e26d933538494eeff3009d11bc"
+  },
+  {
+    "path": "dist/downloads/tc-001.jpg",
+    "bytes": 2909480,
+    "sha256": "f299ebdde1f2276be808a7d44eff5943c6b7989b625cc909067d726ce8581205"
+  },
+  {
+    "path": "dist/downloads/tc-002.jpg",
+    "bytes": 374914,
+    "sha256": "ea02934af40178f159529d3fff4a9e176b8091b71e0c324d529d3626ed0c854b"
+  },
+  {
+    "path": "dist/downloads/tc-003.jpg",
+    "bytes": 1463644,
+    "sha256": "4d7bf6bdb685072caf90e16899beb9d5f548d04b559dd5c39544176401b91f65"
+  },
+  {
+    "path": "dist/downloads/tc-004.jpg",
+    "bytes": 2927295,
+    "sha256": "cc4786f822b618709a5123eeb0559799480a498318c5b9b7093da056fcb373eb"
+  },
+  {
+    "path": "dist/downloads/tc-005.jpg",
+    "bytes": 368462,
+    "sha256": "bf980bed952385bb779f378552b29f5baf25f1497c946a24c24a5ae6ba979c0d"
+  },
+  {
+    "path": "dist/downloads/tc-006.jpg",
+    "bytes": 1487980,
+    "sha256": "dc2ade223dc14516f68d593fe082e16f10fbcc4c372cade1ec2d4e5c23119710"
+  },
+  {
+    "path": "dist/downloads/tc-007.jpg",
+    "bytes": 3173323,
+    "sha256": "e0bb35fc62efaab918fd9856ba086ff31749b9eea69281d5ee0c6d4608e7e53b"
+  },
+  {
+    "path": "dist/downloads/tc-008.jpg",
+    "bytes": 2907959,
+    "sha256": "11b4ca09367addb2a99cdd4fd9d8897546610826b753286fcccee1c169decfa7"
+  },
+  {
+    "path": "dist/downloads/tc-009.jpg",
+    "bytes": 373440,
+    "sha256": "a61117428d3b59ee899f332abb2a6f9ccf22610fff0d616f3a721f00720e9197"
+  },
+  {
+    "path": "dist/downloads/tc-010.jpg",
+    "bytes": 2928535,
+    "sha256": "d6d7eb6af23339c2b442ff4542acc278ccd87d17d2ac1587ee47e69bd2188f5e"
+  },
+  {
+    "path": "dist/downloads/tc-011.jpg",
+    "bytes": 1479073,
+    "sha256": "3f551f240479e0f83095b9142fcb1f34a287838bd8dc4daa4564d451e1256f11"
+  },
+  {
+    "path": "dist/downloads/tc-012.jpg",
+    "bytes": 2952469,
+    "sha256": "87b117f6764d0352a8e6a134ca5f5fb3c97810db455e79a2944784be441c5a51"
+  },
+  {
+    "path": "dist/downloads/tc-013.jpg",
+    "bytes": 471542,
+    "sha256": "10f299dd5bf58c3780b9d60ece474dbbbb03b0f5db3dc02d24a4af7e87f180a4"
+  },
+  {
+    "path": "dist/downloads/tc-014.jpg",
+    "bytes": 391787,
+    "sha256": "c4cea27580197d48c1229fa3086c10129c0c4fdfa55958d8907a556d85115330"
+  },
+  {
+    "path": "dist/downloads/tc-015.jpg",
+    "bytes": 3187928,
+    "sha256": "b1456197a195b9c2887cfbf49839dc5bae44824ec630f953419fa5abcab50c1c"
+  },
+  {
+    "path": "dist/downloads/tc-016.jpg",
+    "bytes": 381206,
+    "sha256": "f0e79b76b7a0043ad068f09969ddadaf26bc8456130a6c6c219c19dc71d29c8d"
+  },
+  {
+    "path": "dist/downloads/tc-017.jpg",
+    "bytes": 2904030,
+    "sha256": "aae368de44722b5e0b999cc49a3d587f2436329a440b90358fd5aded5ad36dea"
+  },
+  {
+    "path": "dist/downloads/tc-018.jpg",
+    "bytes": 2984664,
+    "sha256": "6d69a48f9e711e34ea9266410ee2fa98893fd388b34e06540b7a287f5b52a504"
+  },
+  {
+    "path": "dist/downloads/tc-019.jpg",
+    "bytes": 2910424,
+    "sha256": "a765df15a89013e78c1250bc0868ef1ef3a4f1711f5f922fddef2e16bc6ddc1b"
+  },
+  {
+    "path": "dist/downloads/tc-020.jpg",
+    "bytes": 397499,
+    "sha256": "3d5c6835840303fc33e934b98a23f96cff5d7aeeb8b1d5b1858921f4d96437d3"
+  },
+  {
+    "path": "dist/index.html",
+    "bytes": 3417,
+    "sha256": "082e6a9cd8d03db3ade076a97ce257a2600af632f668c378f29650c2befff184"
+  },
+  {
+    "path": "dist/player.mjs",
+    "bytes": 1664,
+    "sha256": "c5213d57b789efc8e98b87d8cfe76903afe8ade01dd383544eac3449e46916b2"
+  },
+  {
+    "path": "dist/quotes.json",
+    "bytes": 28126,
+    "sha256": "3a00bd163867da9d4b0c83b4fe2b191078b9952f108ce0ec55974f32e1b4bcee"
+  },
+  {
+    "path": "dist/style.css",
+    "bytes": 5439,
+    "sha256": "116a053f54dfbe3395e39fb17bf397097d5b31c64013d7244d59974039f3cc87"
+  }
+]
