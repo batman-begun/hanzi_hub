@@ -1,3 +1,12 @@
 # 0.2.0 scoped QA — 2026-11-01
 PASS: 20-item schema, local-path and download-right checks; visit-all selection without immediate repeat; music-first-interaction, voice pause/resume/error, explicit music-off intent, tab suspension, stale async completion tests. Twenty rendered high-resolution JPEGs and display assets present; ambient MP3 fully decoded with ffmpeg. Each output is source-crop-limited, no upscale.
 Browser: desktop artwork and watermark visual inspection; real ambient playback time advanced after tap. Mobile iframe layout 390×844 and 320×568 checked visually. Detected baked-screen-text crop at 390px and corrected to responsive real text; downloads retain baked composition. Controls/Next/download tested separately before release. No physical iOS/Android QA. No Mandarin quote audio delivered due provider429; no claim of listening/teacher pass. Current library 20 reviewed-by-model drafts, not 300 approved artworks. No public audience change.
+
+## Voice pilot, 2026-11-01
+Twenty gTTS 2.5.4 zh-CN/com/slow=False clips generated with TLS verification, full MP3 decode and SHA-256 checked. Ready means playable in the private pilot; founder listening, pronunciation and content review are pending.
+
+## Public 100-quote preview
+100 original sentence/artwork/voice combinations; 100 distinct source-image IDs and 100 unique audio and download paths. The batch contains 66 AI-generated source images and 34 Met public-domain works, including eight retained from the prior pilot. All 100 audio files decoded fully and passed SHA-256 checks; founder approved the first 20 voices. New text, pinyin, translations and pronunciation remain awaiting founder or teacher review. Desktop local browser: first quote voice starts and music resumes; fullscreen enters and exits. Physical mobile devices and all-clip spoken content review not verified. Exports retain source resolution: widths 508–2160 px; none are upscaled.
+
+## 130-quote gallery release
+130 unique source images, 130 audio files and 130 downloads. The 30 new gTTS clips passed full decode and SHA verification; human review of Mandarin, pinyin, translation and new voice content remains pending. Desktop browser tested the gallery, selecting quote 130, voice start, changelog, and return to scene. At 390x844 the gallery rendered three columns without horizontal overflow; physical devices were not tested. All thumbnails are prebuilt and lazy-loaded. Corrected an unintended informal pronoun in quote 53 on screen and in its downloaded artwork.
